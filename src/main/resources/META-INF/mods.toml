@@ -19,7 +19,7 @@ modId = "kuayue" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version = "0.0.9-Rumia" #mandatory
+version = "0.0.5n-ChiyuriKitashirakawa" #mandatory
 # A display name for the mod
 displayName = "KuaYue" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -31,7 +31,7 @@ logoFile = "kuayue.png" #optional
 # A text field displayed in the mod UI
 credits = "苟利国家生死以，岂因祸福避趋之。" #optional
 # A text field displayed in the mod UI
-authors = "柳树怪,Carole,radekemia"#optional
+authors = "柳树怪,Carole"#optional
 # The description text for the mod (multi line!) (#mandatory)
 description = '''
 我们似乎还可以听到京沪十三猪连发时，震耳欲聋的柴油机轰鸣声响彻夜空。
@@ -54,12 +54,12 @@ description = '''
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.18.2,1.20)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.kuayue]]
     modId="create"
     mandatory=true
-    versionRange="[0.5.0c,)"
+    versionRange="[0.5.0.e,)"
     ordering="NONE"
 side="BOTH"
