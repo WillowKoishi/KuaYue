@@ -80,6 +80,15 @@
 ### 2022.09.24
 
 
+##### version 0.0.5n-ChiyuriKitashirakawa d.26
+
+1.18.2版本分支
+
+----
+
+### 2022.09.24
+
+
 ##### version 0.0.5-ChiyuriKitashirakawa d.20
 增加方块：
 
