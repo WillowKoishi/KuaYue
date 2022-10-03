@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
-version = '0.0.5n-ChiyuriKitashirakawa'
+version = '0.0.6n-YumemiOkazaki'
 group = 'willow.train.kuayue' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'kuayue'
 

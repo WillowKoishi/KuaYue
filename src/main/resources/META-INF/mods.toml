@@ -19,7 +19,7 @@ modId = "kuayue" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version = "0.0.5n-ChiyuriKitashirakawa" #mandatory
+version = "0.0.6n-YumemiOkazaki" #mandatory
 # A display name for the mod
 displayName = "KuaYue" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
@@ -60,6 +60,6 @@ description = '''
 [[dependencies.kuayue]]
     modId="create"
     mandatory=true
-    versionRange="[0.5.0.e,)"
+    versionRange="[0.5.0c,)"
     ordering="NONE"
 side="BOTH"
