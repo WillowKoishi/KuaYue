@@ -699,6 +699,14 @@ public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK 
             () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+    public static final RegistryObject<PanelBlock25Side> PANEL_25G_MARSHALLED_SYMBOL = register("panel_25g_marshalled_symbol",
+            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+    public static final RegistryObject<PanelBlock25Side> PANEL_25K_MARSHALLED_SYMBOL = register("panel_25k_marshalled_symbol",
+            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
 
     public static final RegistryObject<TrainGlassPanelBlock> PANEL_25B_MARSHALLED_WINDOW = register("panel_25b_marshalled_window",
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
@@ -709,6 +717,23 @@ public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK 
             () -> new TopPanelSlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+
+    public static final RegistryObject<TrainGlassPanelBlock> PANEL_25_MARSHALLED_WINDOW = register("panel_25_marshalled_window",
+            () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+
+    public static final RegistryObject<TrainGlassPanelBlock> PANEL_25T_MARSHALLED_SKIRT = register("panel_25t_marshalled_skirt",
+            () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+
+    public static final RegistryObject<PanelBlock25Side> PANEL_25T_MARSHALLED_SKIRT_SIDE = register("panel_25t_marshalled_skirt_side",
+            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
+
+
     //受电弓
     public static final RegistryObject<PantographBlock> PANTOGRAPH = register("pantograph",
             () -> new PantographBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
