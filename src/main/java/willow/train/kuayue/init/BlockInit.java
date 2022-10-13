@@ -1007,7 +1007,7 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
     public static final RegistryObject<MegaPhoneBlock> MEGAPHONE = register("megaphone",
             () -> new MegaPhoneBlock(BlockBehaviour.Properties.of(Material.STONE,MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion()),object -> () -> new BlockItem(object.get(),
-                    new Item.Properties().tab(Main.KUAYUE_GROUND)));
+                    new Item.Properties()));//.tab(Main.KUAYUE_GROUND)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name,
                                                                      final Supplier<? extends T> block) {
