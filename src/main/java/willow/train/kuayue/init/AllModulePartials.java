@@ -1,14 +1,14 @@
 package willow.train.kuayue.init;
 
-import com.jozufozu.flywheel.core.PartialModel;
-import com.simibubi.create.content.contraptions.fluids.FluidTransportBehaviour;
-import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.DyeColor;
-import willow.train.kuayue.Main;
-
 import java.util.EnumMap;
 import java.util.Map;
+
+import com.jozufozu.flywheel.core.PartialModel;
+import com.simibubi.create.content.contraptions.fluids.FluidTransportBehaviour;
+
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.DyeColor;
+import willow.train.kuayue.Main;
 
 public class AllModulePartials {
     public static final PartialModel
@@ -38,14 +38,11 @@ public class AllModulePartials {
 
     private static PartialModel block(String path) {
 
-        return new PartialModel(asResource("block/" + path));
+        return new PartialModel(Main.asResource("block/" + path));
     }
 
     private static PartialModel entity(String path) {
-        return new PartialModel(asResource("entity/" + path));
-    }
-    public static ResourceLocation asResource(String path) {
-        return new ResourceLocation(Main.MOD_ID, path);
+        return new PartialModel(Main.asResource("entity/" + path));
     }
     public static void init() {
         // init static fields

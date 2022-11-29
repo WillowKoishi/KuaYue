@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "kuayue",
+  "version": "${version}",
+  "name": "KuaYue",
+  "description": "苟利国家生死以，岂因祸福避趋之。\n\n我们似乎还可以听到京沪十三猪连发时，震耳欲聋的柴油机轰鸣声响彻夜空。\n这是一个为机械动力mod而制作的装饰类方块mod（暂定） 因为本人是java初学者，不怎么会编程,还请谅解(^^;;;",
+  "authors": [
+    "柳树怪",
+    "Carole",
+    "radekemia"
+  ],
+  "icon": "assets/kuayue/kuayue.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "willow.train.kuayue.Main"
+    ],
+    "client": [
+      "willow.train.kuayue.Main"
+    ]
+  },
+  "mixins": [
+    "kueyue.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17",
+    "create": "*"
+  },
+  "suggests": {
+    "quilt_loader": "*"
+  }
+}
