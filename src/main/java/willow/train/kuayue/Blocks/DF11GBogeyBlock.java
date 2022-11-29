@@ -1,5 +1,7 @@
 package willow.train.kuayue.Blocks;
 
+import java.util.EnumSet;
+
 import com.jozufozu.flywheel.api.MaterialManager;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -7,14 +9,15 @@ import com.mojang.math.Vector3f;
 import com.simibubi.create.AllBlockPartials;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.contraptions.relays.elementary.ShaftBlock;
-import com.simibubi.create.content.logistics.trains.IBogeyBlock;
 import com.simibubi.create.content.logistics.trains.entity.BogeyInstance;
 import com.simibubi.create.content.logistics.trains.entity.CarriageBogey;
 import com.simibubi.create.content.logistics.trains.track.StandardBogeyBlock;
 import com.simibubi.create.content.logistics.trains.track.StandardBogeyTileEntity;
-import com.simibubi.create.foundation.block.ITE;
 import com.simibubi.create.foundation.render.CachedBufferer;
 import com.simibubi.create.foundation.utility.Iterate;
+
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
@@ -32,13 +35,9 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import willow.train.kuayue.init.KYCreateEntities;
 
-import java.util.EnumSet;
-
-public class DF11GBogeyBlock extends StandardBogeyBlock implements IBogeyBlock, ITE<StandardBogeyTileEntity> {
+public class DF11GBogeyBlock extends StandardBogeyBlock {
 
    // public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.HORIZONTAL_AXIS;
 
@@ -99,7 +98,7 @@ public class DF11GBogeyBlock extends StandardBogeyBlock implements IBogeyBlock, 
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
+    @Environment(EnvType.CLIENT)
     public void render(BlockState state, float wheelAngle, PoseStack ms, float partialTicks, MultiBufferSource buffers,
                        int light, int overlay) {
         if (state != null) {
@@ -186,7 +185,7 @@ public class DF11GBogeyBlock extends StandardBogeyBlock implements IBogeyBlock, 
             default -> pState;
         };
     }
-    @Override
+    // @Override
     public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos,
                                        Player player) {
         return AllBlocks.RAILWAY_CASING.asStack();
