@@ -17,7 +17,7 @@ import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
 
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
-import static com.simibubi.create.AllTags.axeOrPickaxe;
+import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
 import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
 
 public class KYCreateBlock {

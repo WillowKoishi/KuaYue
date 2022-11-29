@@ -43,7 +43,7 @@
   "block.kuayue.panel_25_marshalled_bottom_line": "marshalled 25Series Carriage bottom panel 2",
   "block.kuayue.panel_25_marshalled_mid": "marshalled 25Series Carriage Middle panel",
   "block.kuayue.panel_25_marshalled_top": "marshalled 25Series Carriage top panel",
-  "block.kuayue.panel_25_marshalled_top_b":  "marshalled 25Series Carriage top panel 2",
+  "block.kuayue.panel_25_marshalled_top_b": "marshalled 25Series Carriage top panel 2",
   "block.kuayue.panel_25b_marshalled_symbol": "marshalled 25B Carriage symbol panel",
   "block.kuayue.panel_25g_marshalled_symbol": "marshalled 25G Carriage symbol panel",
   "block.kuayue.panel_25k_marshalled_symbol": "marshalled 25K Carriage symbol panel",
@@ -65,7 +65,6 @@
   "block.kuayue.station_entrance_signal": "Inbound signal",
   "block.kuayue.shunting_signal": "Shunting signal",
   "block.kuayue.no_double_pantograph": "no_double_pantograph",
-
 
   "block.kuayue.megaphone": "Grade Crossing Megaphone",
 
@@ -89,9 +88,9 @@
   "block.kuayue.df11g_carport_louver_2": "DF11G loco louver carport2",
   "block.kuayue.df11g_carport_louver_3": "DF11G loco louver carport3",
   "block.kuayue.df11g_carport_kuayue": "DF11G loco \"KUAYUE\"",
-  "block.kuayue.df11g_panel_kuayue":"DF11G buttom panel \"跨越\"",
-  "block.kuayue.df11g_panel_general":"DF11G general bottom panel",
-  "block.kuayue.df11g_panel_mid_general":"DF11G general middle panel",
+  "block.kuayue.df11g_panel_kuayue": "DF11G buttom panel \"跨越\"",
+  "block.kuayue.df11g_panel_general": "DF11G general bottom panel",
+  "block.kuayue.df11g_panel_mid_general": "DF11G general middle panel",
   "block.kuayue.df11g_panel_cr": "DF11G general middle panel - CR logo",
   "block.kuayue.df11g_panel_mid_front": "DF11G middle panel 1",
   "block.kuayue.df11g_panel_mid_front_2": "DF11G middle panel 2",
@@ -109,7 +108,7 @@
   "item.kuayue.train_diet_1.tooltip": "No one really likes to eat train meals.....(vomit)",
 
   "block.kuayue.df11g_front2.tooltip": "§7I’am not PIG!",
-  "block.kuayue.df11g_panel_kuayue.tooltip":"§7What is erased is only paint, and history will never be forgotten....",
+  "block.kuayue.df11g_panel_kuayue.tooltip": "§7What is erased is only paint, and history will never be forgotten....",
 
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_top.tooltip": "R U kidding me?I'm going to throw up",
@@ -118,13 +117,12 @@
 
   "tips.group": "--------------------------------all groups above here-------------------------------------------",
 
-  "itemGroup.item_group_main": "Kuayue Struct",
-  "itemGroup.item_group_diet": "Kuayue Foods",
-  "itemGroup.item_group_catenary": "Kuayue catenary",
-  "itemGroup.item_group_ground": "Kuayue Station System",
-  "itemGroup.item_group_normal_speed_passage_carriage": "Kuayue Normal speed passage carriage",
-  "itemGroup.item_locos": "LeapEra Locos",
-
+  "itemGroup.kuayue.item_group_main": "Kuayue Struct",
+  "itemGroup.kuayue.item_group_diet": "Kuayue Foods",
+  "itemGroup.kuayue.item_group_catenary": "Kuayue catenary",
+  "itemGroup.kuayue.item_group_ground": "Kuayue Station System",
+  "itemGroup.kuayue.item_group_normal_speed_passage_carriage": "Kuayue Normal speed passage carriage",
+  "itemGroup.kuayue.item_locos": "LeapEra Locos",
 
   "tips.sound": "--------------------------------all sounds above here-------------------------------------------",
 
