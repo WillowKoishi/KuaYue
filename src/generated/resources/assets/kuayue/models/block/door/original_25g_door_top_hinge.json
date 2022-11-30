@@ -1,5 +1,5 @@
 {
-  "parent": "kuayue:block/door_top",
+  "parent": "kuayue:block/door/door_top_rh",
   "textures": {
     "1": "kuayue:block/original_25g_door_top"
   }

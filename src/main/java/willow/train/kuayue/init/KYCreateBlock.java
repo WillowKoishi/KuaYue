@@ -9,10 +9,10 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
-import willow.train.kuayue.Blocks.DF11GBogeyBlock;
-import willow.train.kuayue.Blocks.DF11GFrontBlock;
 import willow.train.kuayue.Blocks.FakeDF11GBogeyBlock;
 import willow.train.kuayue.Blocks.Supplier.FakeDF11GBogeyBehavior;
+import willow.train.kuayue.Blocks.df11g.DF11GBogeyBlock;
+import willow.train.kuayue.Blocks.df11g.DF11GFrontBlock;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
 

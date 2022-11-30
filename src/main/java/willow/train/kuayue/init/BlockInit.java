@@ -13,6 +13,10 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import willow.train.kuayue.Blocks.*;
+import willow.train.kuayue.Blocks.df11g.DF11GCarportBlock;
+import willow.train.kuayue.Blocks.df11g.DF11GCowcatcherBlock;
+import willow.train.kuayue.Blocks.df11g.DF11GMirrorCarportBlock;
+import willow.train.kuayue.Blocks.df11g.DF11GPanel3Wide;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
 
@@ -427,8 +431,8 @@ public class BlockInit {
 //            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL,MaterialColor.NONE).strength(3.0f)
 //                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),object -> () -> new BlockItem(object.get(),
 //                    new Item.Properties().tab(Main.KUAYUE_LOCOS)));
-public static final RegistryObject<TrainPanelBlock> DF11G_COWCATCHER = register("df11g_cowcatcher",
-        () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+public static final RegistryObject<DF11GCowcatcherBlock> DF11G_COWCATCHER = register("df11g_cowcatcher",
+        () -> new DF11GCowcatcherBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                 .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
         object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
