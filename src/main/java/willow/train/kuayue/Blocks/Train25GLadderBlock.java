@@ -12,13 +12,17 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.Half;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -27,18 +31,18 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
 
-public class Train25GLadderBlock extends DoorBlock {
+public class Train25GLadderBlock extends TrapDoorBlock {
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
-    public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-
+    public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
-    public Train25GLadderBlock(Properties p_49795_) {
+    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-        super(p_49795_);
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH)
-                .setValue(OPEN,false).setValue(HINGE,DoorHingeSide.LEFT).setValue(HALF,DoubleBlockHalf.LOWER).setValue(POWERED,false));
+
+
+    public Train25GLadderBlock(Properties pProperties) {
+        super(pProperties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.valueOf(false)).setValue(HALF, Half.BOTTOM).setValue(POWERED, Boolean.valueOf(false)).setValue(WATERLOGGED, Boolean.valueOf(false)));
+
     }
 
     protected static final VoxelShape SOUTH_AABB = Shapes.or(Block.box(0.5, 0, 0.5, 15, 1, 9),
@@ -117,17 +121,17 @@ public class Train25GLadderBlock extends DoorBlock {
             Block.box(1, 0, 15.25, 10.25, 2.25, 16),
             Block.box(12, 7.25, 15.25, 13.25, 9.5, 16),
             Block.box(12, 9.5, 15.25, 14.25, 11.25, 16));
-    private boolean canAttachTo(BlockGetter pBlockReader, BlockPos pPos, Direction pDirection) {
-        BlockState blockstate = pBlockReader.getBlockState(pPos);
-        return blockstate.isFaceSturdy(pBlockReader, pPos, pDirection);
-    }
+//    private boolean canAttachTo(BlockGetter pBlockReader, BlockPos pPos, Direction pDirection) {
+//        BlockState blockstate = pBlockReader.getBlockState(pPos);
+//        return blockstate.isFaceSturdy(pBlockReader, pPos, pDirection);
+//    }
 
 
 
 
-    public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
-        return true;
-    }
+//    public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+//        return true;
+//    }
 
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
         switch ((Direction) p_54372_.getValue(FACING)) {
@@ -143,7 +147,7 @@ public class Train25GLadderBlock extends DoorBlock {
         }
     }
 
-    private DoorHingeSide getHinge(BlockPlaceContext pContext) {
+    private Half getHinge(BlockPlaceContext pContext) {
         BlockGetter blockgetter = pContext.getLevel();
         BlockPos blockpos = pContext.getClickedPos();
         Direction direction = pContext.getHorizontalDirection();
@@ -171,25 +175,25 @@ public class Train25GLadderBlock extends DoorBlock {
                 Vec3 vec3 = pContext.getClickLocation();
                 double d0 = vec3.x - (double) blockpos.getX();
                 double d1 = vec3.z - (double) blockpos.getZ();
-                return (j >= 0 || !(d1 < 0.5D)) && (j <= 0 || !(d1 > 0.5D)) && (k >= 0 || !(d0 > 0.5D)) && (k <= 0 || !(d0 < 0.5D)) ? DoorHingeSide.LEFT : DoorHingeSide.RIGHT;
+                return (j >= 0 || !(d1 < 0.5D)) && (j <= 0 || !(d1 > 0.5D)) && (k >= 0 || !(d0 > 0.5D)) && (k <= 0 || !(d0 < 0.5D)) ? Half.BOTTOM : Half.TOP;
             } else {
-                return DoorHingeSide.LEFT;
+                return Half.BOTTOM;
             }
         } else {
-            return DoorHingeSide.RIGHT;
+            return Half.TOP;
         }
     }
 
     @Nullable
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+        FluidState fluidstate = pContext.getLevel().getFluidState(pContext.getClickedPos());
         return this.defaultBlockState().setValue(FACING, pContext.getHorizontalDirection())
-                .setValue(HINGE, this.getHinge(pContext)).setValue(OPEN,false).setValue(HALF,DoubleBlockHalf.LOWER).setValue(POWERED,false);
+                .setValue(HALF, this.getHinge(pContext)).setValue(OPEN,false).setValue(POWERED,false)
+                .setValue(WATERLOGGED, Boolean.valueOf(fluidstate.getType() == Fluids.WATER));
     }
 
 
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING).add(HINGE).add(OPEN).add(HALF).add(POWERED);
-    }
+
     @Override
     public void setPlacedBy(Level pLevel, BlockPos pPos, BlockState pState, LivingEntity pPlacer, ItemStack pStack) {
         //pLevel.setBlock(pPos.above(), pState.setValue(HALF, DoubleBlockHalf.UPPER), 3);
@@ -230,27 +234,27 @@ public class Train25GLadderBlock extends DoorBlock {
 
         return pState;
     }
-    public BlockState mirror(BlockState pState, Mirror pMirror) {
-        return pMirror == Mirror.NONE ? pState : pState.rotate(pMirror.getRotation(pState.getValue(FACING))).cycle(HINGE);
-    }
+//    public BlockState mirror(BlockState pState, Mirror pMirror) {
+//        return pMirror == Mirror.NONE ? pState : pState.rotate(pMirror.getRotation(pState.getValue(FACING))).cycle(HINGE);
+//    }
 
     public BlockState rotate(BlockState pState, Rotation pRotation) {
         return pState.setValue(FACING, pRotation.rotate(pState.getValue(FACING)));
     }
-    @Override
-    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
-
-    }
-    @Override
-    public PushReaction getPistonPushReaction(BlockState pState) {
-        return PushReaction.PUSH_ONLY;
-    }
-    @Override
-    public void playerWillDestroy(Level pLevel, BlockPos pPos, BlockState pState, Player pPlayer) {
-//        if (!pLevel.isClientSide && pPlayer.isCreative()) {
-//            DoublePlantBlock.preventCreativeDropFromBottomPart(pLevel, pPos, pState, pPlayer);
-//        }
-
-        super.playerWillDestroy(pLevel, pPos, pState, pPlayer);
-    }
+//    @Override
+//    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
+//
+//    }
+//    @Override
+//    public PushReaction getPistonPushReaction(BlockState pState) {
+//        return PushReaction.PUSH_ONLY;
+//    }
+//    @Override
+//    public void playerWillDestroy(Level pLevel, BlockPos pPos, BlockState pState, Player pPlayer) {
+////        if (!pLevel.isClientSide && pPlayer.isCreative()) {
+////            DoublePlantBlock.preventCreativeDropFromBottomPart(pLevel, pPos, pState, pPlayer);
+////        }
+//
+//        super.playerWillDestroy(pLevel, pPos, pState, pPlayer);
+//    }
 }
