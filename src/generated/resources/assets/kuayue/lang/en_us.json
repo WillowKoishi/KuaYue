@@ -65,6 +65,8 @@
   "block.kuayue.station_entrance_signal": "Inbound signal",
   "block.kuayue.shunting_signal": "Shunting signal",
   "block.kuayue.no_double_pantograph": "no_double_pantograph",
+  "block.kuayue.df11g_cab_door": "DF11G cab door",
+  "block.kuayue.df11g_cowcatcher": "DF11G Cowcatcher",
 
 
   "block.kuayue.megaphone": "Grade Crossing Megaphone",
