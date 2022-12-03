@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.model.data.IModelData;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import org.jetbrains.annotations.NotNull;
@@ -40,11 +39,11 @@ public class DF11GFrontTileEntity extends SmartTileEntity {
         super.requestModelDataUpdate();
     }
 
-    @NotNull
-    @Override
-    public IModelData getModelData() {
-        return super.getModelData();
-    }
+//    @NotNull
+//    @Override
+//    public IModelData getModelData() {
+//        return super.getModelData();
+//    }
 
     @NotNull
     @Override
