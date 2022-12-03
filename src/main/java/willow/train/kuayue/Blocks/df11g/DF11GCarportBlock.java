@@ -21,7 +21,7 @@ public class DF11GCarportBlock extends HorizontalBlockBase {
     protected static final VoxelShape SOUTH_AABB2 = Shapes.or(Block.box(-16, 0, 0, 32, 8, 16), Block.box(-16, 8, 8, 32, 16, 16));
     protected static final VoxelShape WEST_AABB2 = Shapes.or(Block.box(0, 0, -16, 16, 8, 32), Block.box(0, 8, -16, 8, 16, 32));
     protected static final VoxelShape NORTH_AABB2 = Shapes.or(Block.box(-16, 0, 0, 32, 8, 16), Block.box(-16, 8, 0, 32, 16, 8));
-    protected static final VoxelShape EAST_AABB2 = Shapes.or(Block.box(-16, 0, 0, 32, 8, 16), Block.box(-16, 8, 0, 32, 16, 8));
+    protected static final VoxelShape EAST_AABB2 = Shapes.or(Block.box(8, 8, -16, 16, 16, 32), Block.box(0, 0, -16, 16, 8, 32));
 
 
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
