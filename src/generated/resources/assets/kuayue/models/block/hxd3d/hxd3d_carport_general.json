@@ -49,22 +49,190 @@
 			"from": [0, 0, -0.21252],
 			"to": [16, 1, 15.48748],
 			"rotation": {"angle": 0, "axis": "y", "origin": [7.85049, 4, 7.89904]},
-			"faces": {
-				"north": {"uv": [8, 7.25, 12, 7.5], "texture": "#4"},
-				"east": {"uv": [8, 8, 11.625, 8.25], "texture": "#4"},
-				"south": {"uv": [8, 7.5, 12, 7.75], "texture": "#4"},
-				"west": {"uv": [8, 7.75, 11.625, 8], "texture": "#4"},
-				"up": {"uv": [3.625, 4, 0, 0], "rotation": 270, "texture": "#4"},
-				"down": {"uv": [7.375, 0, 3.75, 4], "rotation": 90, "texture": "#4"}
-			}
-		}
-	],
-	"groups": [
-		{
-			"name": "upperhlfbrick1",
-			"origin": [-0.05, 0, 10.5],
-			"color": 0,
-			"children": [0, 1, 2, 3]
-		}
-	]
+          "faces": {
+            "north": {
+              "uv": [
+                8,
+                7.25,
+                12,
+                7.5
+              ],
+              "texture": "#4"
+            },
+            "east": {
+              "uv": [
+                8,
+                8,
+                11.625,
+                8.25
+              ],
+              "texture": "#4"
+            },
+            "south": {
+              "uv": [
+                8,
+                7.5,
+                12,
+                7.75
+              ],
+              "texture": "#4"
+            },
+            "west": {
+              "uv": [
+                8,
+                7.75,
+                11.625,
+                8
+              ],
+              "texture": "#4"
+            },
+            "up": {
+              "uv": [
+                3.625,
+                4,
+                0,
+                0
+              ],
+              "rotation": 270,
+              "texture": "#4"
+            },
+            "down": {
+              "uv": [
+                7.375,
+                0,
+                3.75,
+                4
+              ],
+              "rotation": 90,
+              "texture": "#4"
+            }
+          }
+        }
+    ],
+  "gui_light": "front",
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        1,
+        -2.75
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        1.25,
+        1
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        103,
+        0
+      ],
+      "translation": [
+        4,
+        0,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        133,
+        0
+      ],
+      "translation": [
+        2,
+        0,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        1.25,
+        0
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        0,
+        -15
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        0,
+        -4
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "upperhlfbrick1",
+      "origin": [
+        -0.05,
+        0,
+        10.5
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
 }

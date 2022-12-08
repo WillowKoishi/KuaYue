@@ -12,16 +12,17 @@ import willow.train.kuayue.Util.HorizontalBlockBase;
 public class TrainPanelBlock extends HorizontalBlockBase {
     private static VoxelShape shape;
     protected static final float AABB_OFFSET = 3.0F;
-    protected static final VoxelShape SOUTH_AABB = Block.box(0.0D, 0.0D, 15, 16, 16, 16);
-    protected static final VoxelShape WEST_AABB = Block.box(0, 0.0D, 0.0D, 1, 16.0D, 16.0D);
-    protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 1);
-    protected static final VoxelShape EAST_AABB = Block.box(15, 0.0D, 0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape SOUTH_AABB = Block.box(0, 0, 15, 16, 16, 17);
+    protected static final VoxelShape EAST_AABB = Block.box(15, 0, 0, 17, 16, 16);
+    protected static final VoxelShape NORTH_AABB = Block.box(0, 0, -1, 16, 16, 1);
+    protected static final VoxelShape WEST_AABB = Block.box(-1, 0, 0, 1, 16, 16);
 
     public TrainPanelBlock(Properties p_49795_) {
         super(p_49795_);
     }
+
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
-        switch((Direction)p_54372_.getValue(FACING)) {
+        switch ((Direction) p_54372_.getValue(FACING)) {
             case NORTH:
                 return NORTH_AABB;
             case SOUTH:
