@@ -52,8 +52,8 @@ public class KYCreateBlock {
                     .transform(BlockStressDefaults.setImpact(2.0))
                     //.onRegister(CreateRegistrate.connectedTextures(CrafterCTBehaviour::new))
                     .addLayer(() -> RenderType::cutoutMipped)
-//                    .item(ToolTipsItemHelper::new)
-//                    .transform(customItemModel())
+                    .item(ToolTipsItemHelper::new)
+                    .transform(customItemModel())
                     .register();
 
 
