@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import willow.train.kuayue.Blocks.Entities.DF11GFrontTileEntity;
-import willow.train.kuayue.Blocks.df11g.DF11GFrontBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GFrontBlock;
 
 public class DF11GTileEntityRenderer extends SafeTileEntityRenderer<DF11GFrontTileEntity> {
     public static final Logger LOGGER = LoggerFactory.getLogger("KuaYue");

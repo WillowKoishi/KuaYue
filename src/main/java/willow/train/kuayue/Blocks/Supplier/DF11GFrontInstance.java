@@ -8,7 +8,7 @@ import com.simibubi.create.content.contraptions.base.KineticTileEntity;
 import com.simibubi.create.content.contraptions.base.SingleRotatingInstance;
 import com.simibubi.create.content.contraptions.base.flwdata.RotatingData;
 import net.minecraft.core.Direction;
-import willow.train.kuayue.Blocks.df11g.DF11GFrontBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GFrontBlock;
 import willow.train.kuayue.init.AllModulePartials;
 
 import java.util.function.Supplier;

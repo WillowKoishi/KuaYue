@@ -13,10 +13,15 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import willow.train.kuayue.Blocks.*;
-import willow.train.kuayue.Blocks.df11g.DF11GCarportBlock;
-import willow.train.kuayue.Blocks.df11g.DF11GCowcatcherBlock;
-import willow.train.kuayue.Blocks.df11g.DF11GMirrorCarportBlock;
-import willow.train.kuayue.Blocks.df11g.DF11GPanel3Wide;
+import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DCabDoorBlock;
+import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DPanelBlocks;
+import willow.train.kuayue.Blocks.Locos.PantographBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GCarportBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GCowcatcherBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GMirrorCarportBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GPanel3Wide;
+import willow.train.kuayue.Blocks.Structure.*;
+import willow.train.kuayue.Blocks.TrainCarriage.*;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
 
@@ -514,7 +519,7 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
 
     public static final RegistryObject<TrainDoorBlock> DF11G_CAB_DOOR = register("df11g_cab_door",
             () -> new TrainDoorBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.WATER).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
     public static final RegistryObject<HXD3DPanelBlocks> HXD3D_PANEL_RED = register("hxd3d_panel_red",
@@ -529,6 +534,16 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
     public static final RegistryObject<HXD3DPanelBlocks> HXD3D_CARPORT_GENERAL = register("hxd3d_carport_general",
             () -> new HXD3DPanelBlocks(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(), 2),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+
+    public static final RegistryObject<Block> HXD3D_SLAB = register("hxd3d_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.CLAY, MaterialColor.STONE).strength(3.0f)
+                    .sound(SoundType.POLISHED_DEEPSLATE).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+
+    public static final RegistryObject<HXD3DCabDoorBlock> HXD3D_CAB_DOOR = register("hxd3d_cab_door",
+            () -> new HXD3DCabDoorBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.WATER).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name,
