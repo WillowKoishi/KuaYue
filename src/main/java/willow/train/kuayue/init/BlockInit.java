@@ -16,10 +16,7 @@ import willow.train.kuayue.Blocks.*;
 import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DCabDoorBlock;
 import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DPanelBlocks;
 import willow.train.kuayue.Blocks.Locos.PantographBlock;
-import willow.train.kuayue.Blocks.Locos.df11g.DF11GCarportBlock;
-import willow.train.kuayue.Blocks.Locos.df11g.DF11GCowcatcherBlock;
-import willow.train.kuayue.Blocks.Locos.df11g.DF11GMirrorCarportBlock;
-import willow.train.kuayue.Blocks.Locos.df11g.DF11GPanel3Wide;
+import willow.train.kuayue.Blocks.Locos.df11g.*;
 import willow.train.kuayue.Blocks.Structure.*;
 import willow.train.kuayue.Blocks.TrainCarriage.*;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
@@ -517,8 +514,18 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
+    public static final RegistryObject<DF11GEndFaceBlock> DF11G_END_FACE = register("df11g_end_face",
+            () -> new DF11GEndFaceBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+
     public static final RegistryObject<TrainDoorBlock> DF11G_CAB_DOOR = register("df11g_cab_door",
-            () -> new TrainDoorBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.WATER).strength(3.0f)
+            () -> new TrainDoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WATER).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+
+    public static final RegistryObject<HXD3DCabDoorBlock> DF11G_EQUIP_ROOM_DOOR = register("df11g_equip_room_door",
+            () -> new HXD3DCabDoorBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WATER).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 

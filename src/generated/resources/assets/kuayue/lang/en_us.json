@@ -99,13 +99,17 @@
   "block.kuayue.df11g_panel_mid_shades": "DF11G middle louver",
   "block.kuayue.df11g_panel_mid_window": "DF11G middle window",
   "block.kuayue.df11g_cab_door": "DF11G cab door",
+  "block.kuayue.df11g_equip_room_door": "DF11G equipment room door",
   "block.kuayue.df11g_cowcatcher": "DF11G Cowcatcher",
+  "block.kuayue.df11g_end_face": "DF11G end face",
+
   "block.kuayue.hxd3d_front": "HXD3D loco head",
   "block.kuayue.hxd3d_panel_red": "HXD3D general panel",
   "block.kuayue.hxd3d_panel_hexie": "HXD3D panel \"和谐\"",
   "block.kuayue.hxd3d_carport_general": "HXD3D Carport",
   "block.kuayue.hxd3d_slab": "HXD3D floor",
   "block.kuayue.hxd3d_cab_door": "HXD3D cab door",
+
   "tips.item": "--------------------------------all items above here-------------------------------------------",
   "item.kuayue.train_diet_1": "Train Meal A",
   "item.kuayue.ca_25t": "Dining Car CA25T",

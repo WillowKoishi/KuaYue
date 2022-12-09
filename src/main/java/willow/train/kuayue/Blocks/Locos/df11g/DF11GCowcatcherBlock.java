@@ -11,10 +11,10 @@ import willow.train.kuayue.Blocks.TrainCarriage.TrainPanelBlock;
 
 public class DF11GCowcatcherBlock extends TrainPanelBlock {
     protected static final float AABB_OFFSET = 3.0F;
-    protected static final VoxelShape NORTH_AABB = Block.box(-16, 9, -3, 32, 16.25, 32);
-    protected static final VoxelShape WEST_AABB = Block.box(-3, 9, -16, 32, 16.25, 32);
-    protected static final VoxelShape SOUTH_AABB = Block.box(-32, 9, -16, 16, 16.25, 19);
-    protected static final VoxelShape EAST_AABB = Block.box(-16, 9, -16, 19, 16.25, 32);
+    protected static final VoxelShape NORTH_AABB = Block.box(-16, 9, -3, 32, 16, 32);
+    protected static final VoxelShape WEST_AABB = Block.box(-3, 9, -16, 32, 16, 32);
+    protected static final VoxelShape SOUTH_AABB = Block.box(-32, 9, -16, 16, 16, 16);
+    protected static final VoxelShape EAST_AABB = Block.box(-16, 9, -16, 19, 16, 32);
 
     public DF11GCowcatcherBlock(Properties p_49795_) {
         super(p_49795_);
