@@ -18,12 +18,13 @@ public class HXD3DCabDoorBlock extends TrainDoorBlock {
     protected static final VoxelShape NORTH_AABB1 = Block.box(0, 0, -0.5, 16, 16, 0.5);
     protected static final VoxelShape WEST_AABB1 = Block.box(-0.5, 0, 0, 0.5, 16, 16);
 
-    protected static final VoxelShape SOUTH_AABB = Shapes.or(Block.box(12, 0, 15.5, 16, 14.75, 16.5), Block.box(0, 0, 15.5, 5, 14.75, 16.5));
-    protected static final VoxelShape NORTH_AABB = Shapes.or(Block.box(0, 0, -0.5, 4, 14.75, 0.5), Block.box(11, 0, -0.5, 16, 14.75, 0.5));
+    protected static final VoxelShape SOUTH_AABB0 = Shapes.or(Block.box(12, 0, 15.5, 16, 14.75, 16.5), Block.box(0, 0, 15.5, 5, 14.75, 16.5));
 
-    protected static final VoxelShape EAST_AABB = Shapes.or(Block.box(-0.5, 0, 12, 0.5, 14.75, 16), Block.box(-0.5, 0, 0, 0.5, 14.75, 5));
+    protected static final VoxelShape NORTH_AABB0 = Shapes.or(Block.box(0, 0, -0.5, 4, 14.75, 0.5), Block.box(11, 0, -0.5, 16, 14.75, 0.5));
 
-    protected static final VoxelShape WEST_AABB = Shapes.or(Block.box(15.5, 0, 0, 16.5, 14.75, 4), Block.box(15.5, 0, 11, 16.5, 14.75, 16));
+    protected static final VoxelShape WEST_AABB0 = Shapes.or(Block.box(-0.5, 0, 12, 0.5, 14.75, 16), Block.box(-0.5, 0, 0, 0.5, 14.75, 5));
+
+    protected static final VoxelShape EAST_AABB0 = Shapes.or(Block.box(15.5, 0, 0, 16.5, 14.75, 4), Block.box(15.5, 0, 11, 16.5, 14.75, 16));
 
     protected static final VoxelShape EAST_AABB2=Shapes.or(Block.box(-0.5, 0, 15, 0.5, 14.75, 16),
             Block.box(-0.5, 0, 0, 0.5, 14.75, 1));
@@ -36,14 +37,14 @@ public class HXD3DCabDoorBlock extends TrainDoorBlock {
         if (pState.getValue(OPEN)) {
             switch (pState.getValue(FACING)) {
                 case NORTH:
-                    return NORTH_AABB;
+                    return NORTH_AABB0;
                 case SOUTH:
-                    return SOUTH_AABB;
+                    return SOUTH_AABB0;
                 case WEST:
-                    return WEST_AABB;
+                    return WEST_AABB0;
                 case EAST:
                 default:
-                    return EAST_AABB;
+                    return EAST_AABB0;
             }
         }else {
             switch (pState.getValue(FACING)) {

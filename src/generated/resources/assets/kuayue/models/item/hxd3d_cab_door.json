@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kuayue:item/original_25k_door"
+    "layer0": "kuayue:item/hxd3d_cab_door"
   }
 }
