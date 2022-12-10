@@ -5,7 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
+import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -58,7 +60,7 @@ public class Main implements ModInitializer, ClientModInitializer {
 		EffectInit.register();
 		KYCreateBlock.register();
 		KYCreateEntities.register();
-		AllModulePartials.init();
+		EnvExecutor.runWhenOn(EnvType.CLIENT, () -> () -> AllModulePartials.init());
 		REGISTRATE.register();
 	}
 
