@@ -9,9 +9,9 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
-import willow.train.kuayue.Blocks.DF11GBogeyBlock;
-import willow.train.kuayue.Blocks.DF11GFrontBlock;
-import willow.train.kuayue.Blocks.FakeDF11GBogeyBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GBogeyBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.DF11GFrontBlock;
+import willow.train.kuayue.Blocks.Locos.df11g.FakeDF11GBogeyBlock;
 import willow.train.kuayue.Blocks.Supplier.FakeDF11GBogeyBehavior;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
@@ -52,8 +52,8 @@ public class KYCreateBlock {
                     .transform(BlockStressDefaults.setImpact(2.0))
                     //.onRegister(CreateRegistrate.connectedTextures(CrafterCTBehaviour::new))
                     .addLayer(() -> RenderType::cutoutMipped)
-//                    .item(ToolTipsItemHelper::new)
-//                    .transform(customItemModel())
+                    .item(ToolTipsItemHelper::new)
+                    .transform(customItemModel())
                     .register();
 
 

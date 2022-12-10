@@ -1,6 +1,0 @@
-{
-  "parent": "kuayue:block/door_top",
-  "textures": {
-    "1": "kuayue:block/marshalled_25_door_top"
-  }
-}

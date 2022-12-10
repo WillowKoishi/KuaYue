@@ -1,19 +1,19 @@
 {
   "variants": {
     "facing=east": {
-      "model": "kuayue:block/panel_25_marshalled_window",
+      "model": "kuayue:block/carriage/carriage25gaozu_niucha/panel_25_marshalled_window",
       "y": 270
     },
     "facing=north": {
-      "model": "kuayue:block/panel_25_marshalled_window",
+      "model": "kuayue:block/carriage/carriage25gaozu_niucha/panel_25_marshalled_window",
       "y": 180
     },
     "facing=south": {
-      "model": "kuayue:block/panel_25_marshalled_window",
+      "model": "kuayue:block/carriage/carriage25gaozu_niucha/panel_25_marshalled_window",
       "y": 0
     },
     "facing=west": {
-      "model": "kuayue:block/panel_25_marshalled_window",
+      "model": "kuayue:block/carriage/carriage25gaozu_niucha/panel_25_marshalled_window",
       "y": 90
     }
   }

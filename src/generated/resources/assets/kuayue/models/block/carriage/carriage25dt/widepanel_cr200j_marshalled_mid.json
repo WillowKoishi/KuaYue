@@ -1,0 +1,7 @@
+{
+  "parent": "kuayue:block/carriage/carriage25t/widepanel_kuayue",
+  "textures": {
+    "0": "kuayue:block/widepanel_cr200j_marshalled_mid",
+    "particle": "kuayue:block/widepanel_cr200j_marshalled_mid"
+  }
+}

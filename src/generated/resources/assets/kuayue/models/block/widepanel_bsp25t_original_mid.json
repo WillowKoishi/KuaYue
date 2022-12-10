@@ -1,7 +1,0 @@
-{
-  "parent": "kuayue:block/widepanel_kuayue",
-  "textures": {
-    "0": "kuayue:block/widepanel_bsp25t_original_mid",
-    "particle": "kuayue:block/widepanel_bsp25t_original_mid"
-  }
-}

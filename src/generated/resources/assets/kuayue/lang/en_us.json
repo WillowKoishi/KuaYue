@@ -88,41 +88,47 @@
   "block.kuayue.df11g_carport_louver_2": "DF11G loco louver carport2",
   "block.kuayue.df11g_carport_louver_3": "DF11G loco louver carport3",
   "block.kuayue.df11g_carport_kuayue": "DF11G loco \"KUAYUE\"",
-  "block.kuayue.df11g_panel_kuayue": "DF11G buttom panel \"跨越\"",
-  "block.kuayue.df11g_panel_general": "DF11G general bottom panel",
-  "block.kuayue.df11g_panel_mid_general": "DF11G general middle panel",
+  "block.kuayue.df11g_panel_kuayue":  "DF11G buttom panel \"跨越\"",
+  "block.kuayue.df11g_panel_general":  "DF11G general bottom panel",
+  "block.kuayue.df11g_panel_mid_general":  "DF11G general middle panel",
   "block.kuayue.df11g_panel_cr": "DF11G general middle panel - CR logo",
   "block.kuayue.df11g_panel_mid_front": "DF11G middle panel 1",
   "block.kuayue.df11g_panel_mid_front_2": "DF11G middle panel 2",
   "block.kuayue.df11g_panel_shades": "DF11G bottom louver",
   "block.kuayue.df11g_panel_mid_shades": "DF11G middle louver",
   "block.kuayue.df11g_panel_mid_window": "DF11G middle window",
+  "block.kuayue.df11g_cab_door": "DF11G cab door",
+  "block.kuayue.df11g_equip_room_door": "DF11G equipment room door",
+  "block.kuayue.df11g_cowcatcher": "DF11G Cowcatcher",
+  "block.kuayue.df11g_end_face": "DF11G end face",
+
+  "block.kuayue.hxd3d_front": "HXD3D loco head",
+  "block.kuayue.hxd3d_panel_red": "HXD3D general panel",
+  "block.kuayue.hxd3d_panel_hexie": "HXD3D panel \"和谐\"",
+  "block.kuayue.hxd3d_carport_general": "HXD3D Carport",
+  "block.kuayue.hxd3d_slab": "HXD3D floor",
+  "block.kuayue.hxd3d_cab_door": "HXD3D cab door",
 
   "tips.item": "--------------------------------all items above here-------------------------------------------",
-
   "item.kuayue.train_diet_1": "Train Meal A",
   "item.kuayue.ca_25t": "Dining Car CA25T",
-
   "tips.tips": "--------------------------------all tips above here-------------------------------------------",
-
   "item.kuayue.train_diet_1.tooltip": "No one really likes to eat train meals.....(vomit)",
-
   "block.kuayue.df11g_front2.tooltip": "§7I’am not PIG!",
   "block.kuayue.df11g_panel_kuayue.tooltip": "§7What is erased is only paint, and history will never be forgotten....",
-
+  "block.kuayue.hxd3d_front.tooltip": "§cNot A DATES!",
+  "block.kuayue.pantograph.tooltip": "§7Right click to lower the pantograph",
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_top.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_bottom.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.slab_cr200j_marshalled_top.tooltip": "R U kidding me?I'm going to throw up",
-
   "tips.group": "--------------------------------all groups above here-------------------------------------------",
-
   "itemGroup.kuayue.item_group_main": "Kuayue Struct",
   "itemGroup.kuayue.item_group_diet": "Kuayue Foods",
   "itemGroup.kuayue.item_group_catenary": "Kuayue catenary",
   "itemGroup.kuayue.item_group_ground": "Kuayue Station System",
   "itemGroup.kuayue.item_group_normal_speed_passage_carriage": "Kuayue Normal speed passage carriage",
-  "itemGroup.kuayue.item_locos": "Kuayue Locos",
+  "itemGroup.kuayue.item_locos": "LeapEra Locos",
 
   "tips.sound": "--------------------------------all sounds above here-------------------------------------------",
 
