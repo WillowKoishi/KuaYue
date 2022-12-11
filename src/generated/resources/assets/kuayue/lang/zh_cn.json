@@ -10,6 +10,9 @@
   "block.kuayue.panel_25b_original_top": "原色25B车厢上厢板",
   "block.kuayue.slab_25b_original_top": "原色25B地板",
   "block.kuayue.panel_25b_original_top_b": "原色25B车厢上厢板b",
+  "block.kuayue.end_face_25b_original": "原色25B车厢端面",
+  "block.kuayue.ladder_25b_original":"原色25B登车梯",
+
   "block.kuayue.panel_25g_original_bottom": "原色25G车厢下厢板",
   "block.kuayue.panel_25g_original_mid": "原色25G车厢中厢板",
   "block.kuayue.panel_25g_original_window": "原色25G车厢窗户",
@@ -54,6 +57,7 @@
   "block.kuayue.panel_25b_marshalled_window": "刷绿25B车厢窗户",
   "block.kuayue.slab_25_marshalled_top": "刷绿25系列车厢地板",
   "block.kuayue.carport_25bgzk": "25B/G/Z/K车厢车棚",
+  "block.kuayue.carport_25bgzk_air_condition_all": "25系列车厢空调1",
   "block.kuayue.carport_25t": "25T车厢车棚",
   "block.kuayue.smooth_quartz_panel_half": "平滑石英竖半砖",
   "block.kuayue.smooth_quartz_panel_4": "平滑石英竖1/4砖",
