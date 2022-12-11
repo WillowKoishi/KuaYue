@@ -8,6 +8,9 @@
   "block.kuayue.panel_25b_original_window": "original color 25B carriage window",
   "block.kuayue.panel_25b_original_top": "original color 25B carriage up panel",
   "block.kuayue.slab_25b_original_top": "original color 25B carriage up panel",
+  "block.kuayue.end_face_25b_original": "original color 25B carriage end face",
+ "block.kuayue.ladder_25b_original":"original color 25B carriage ladder",
+
   "block.kuayue.panel_25b_original_top_b": "original color 25B carriage floor",
   "block.kuayue.panel_25g_original_bottom": "original color 25G carriage bottom panel",
   "block.kuayue.panel_25g_original_mid": "original color 25G carriage middle panel",
@@ -53,6 +56,8 @@
   "block.kuayue.panel_25b_marshalled_window": "marshalled 25B Carriage window",
   "block.kuayue.slab_25_marshalled_top": "marshalled 25Series Carriage floor",
   "block.kuayue.carport_25bgzk": "25B/G/Z/K Carriage Carport",
+  "block.kuayue.carport_25bgzk_air_condition_all": "25B/G/Z/K air condition",
+
   "block.kuayue.carport_25t": "25T Carriage Carport",
   "block.kuayue.smooth_quartz_panel_half": "1/2 Smooth quartz block",
   "block.kuayue.smooth_quartz_panel_4": "1/2 Smooth quartz block",

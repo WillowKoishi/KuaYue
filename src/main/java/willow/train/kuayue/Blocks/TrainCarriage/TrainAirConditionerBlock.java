@@ -28,10 +28,15 @@ protected void connectTo(BlockPlaceContext pContext){
     BlockPos blockpos3 = blockpos.south();
     BlockPos blockpos4 = blockpos.west();
 
-    BlockState Nblockstate1 = levelreader.getBlockState(blockpos1);
-    BlockState Eblockstate2 = levelreader.getBlockState(blockpos2);
-    BlockState Sblockstate3 = levelreader.getBlockState(blockpos3);
-    BlockState Wblockstate4 = levelreader.getBlockState(blockpos4);
+    BlockState NblockstateN = levelreader.getBlockState(blockpos1);
+    BlockState EblockstateE = levelreader.getBlockState(blockpos2);
+    BlockState SblockstateS = levelreader.getBlockState(blockpos3);
+    BlockState WblockstateW = levelreader.getBlockState(blockpos4);
+
+    //Direction THIS_FACING =
+}
+protected boolean isTACB(BlockState blockState){
+        return blockState.getBlock() instanceof TrainAirConditionerBlock;
 }
     @Nullable
     @Override
