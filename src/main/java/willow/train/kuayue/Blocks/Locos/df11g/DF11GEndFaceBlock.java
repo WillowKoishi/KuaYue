@@ -28,6 +28,13 @@ public class DF11GEndFaceBlock extends TrainPanelBlock {
             Block.box(15, 20, -1, 24, 26, 17));
 
 
+
+    protected static final VoxelShape SOUTH_AABBo = Block.box(0, 0, 15, 16, 16, 17);
+    protected static final VoxelShape EAST_AABBo = Block.box(15, 0, 0, 17, 16, 16);
+    protected static final VoxelShape NORTH_AABBo = Block.box(0, 0, -1, 16, 16, 1);
+    protected static final VoxelShape WEST_AABBo = Block.box(-1, 0, 0, 1, 16, 16);
+
+
     public DF11GEndFaceBlock(Properties p_49795_) {
         super(p_49795_);
     }
@@ -50,7 +57,19 @@ public class DF11GEndFaceBlock extends TrainPanelBlock {
     }
 
     @Override
-    public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
-        return Block.box(0, 0, 0, 16, 16, 16);
+    public VoxelShape getShape(BlockState pState, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
+        switch (pState.getValue(FACING)){
+            case SOUTH :
+                return SOUTH_AABBo;
+
+            case NORTH:
+                return NORTH_AABBo;
+
+            case WEST:
+                return WEST_AABBo;
+            case EAST:
+            default:
+                return EAST_AABBo;
+        }
     }
 }
