@@ -13,9 +13,9 @@ import willow.train.kuayue.Blocks.Structure.PanelBlock25Side;
 public class DF11GMirrorCarportBlock extends PanelBlock25Side {
     protected int mWide = 1;
     protected static final VoxelShape SOUTH_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(0, 8, 8, 16, 16, 16));
-    protected static final VoxelShape WEST_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(8, 8, 0, 16, 16, 16));
+    protected static final VoxelShape EAST_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(8, 8, 0, 16, 16, 16));
     protected static final VoxelShape NORTH_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(0, 8, 0, 16, 16, 8));
-    protected static final VoxelShape EAST_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(0, 8, 0, 8, 16, 16));
+    protected static final VoxelShape WEST_AABB1 = Shapes.or(Block.box(0, 0, 0, 16, 8, 16), Block.box(0, 8, 0, 8, 16, 16));
 
 
     protected static final VoxelShape NORTH_AABB2 =Block.box(0, 0, -1, 16, 32, 1.25);
