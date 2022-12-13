@@ -20,6 +20,7 @@
   "block.kuayue.slab_25g_original_top": "原色25G地板",
   "block.kuayue.ladder_25g_original": "原色25G登车梯",
   "block.kuayue.end_face_25g_original": "原色25G车厢端面",
+  "block.kuayue.end_face_door_25bg": "25B/G车厢隔离门",
 
   "block.kuayue.panel_25k_original_bottom": "原色25K车厢下厢板",
   "block.kuayue.panel_25k_original_bottom_line": "原色25K车厢腰线",
@@ -28,6 +29,8 @@
   "block.kuayue.panel_25k_original_window": "原色25K车厢窗户",
   "block.kuayue.panel_25k_original_top": "原色25K车厢上厢板",
   "block.kuayue.slab_25k_original_top": "原色25K地板",
+  "block.kuayue.end_face_25k_original": "原色25K车厢端面",
+
   "block.kuayue.panel_25t_original_bottom": "原色25T车厢下厢板",
   "block.kuayue.panel_25t_original_bottom_b": "原色25T车厢下厢板b",
   "block.kuayue.panel_25t_original_mid": "原色25T车厢中厢板",
@@ -40,6 +43,8 @@
   "block.kuayue.panel_25t_original_skirt": "原色25T车厢裙板",
   "block.kuayue.panel_25t_original_skirt_side": "原色25T车厢侧裙板",
   "block.kuayue.slab_25t_original_top": "原色25T地板",
+  "block.kuayue.end_face_25t_original": "原色25T车厢端面",
+
   "block.kuayue.original_25b_door": "原色25B车厢门",
   "block.kuayue.original_25g_door": "原色25G车厢门",
   "block.kuayue.original_25k_door": "原色25K车厢门",
@@ -60,6 +65,7 @@
   "block.kuayue.slab_25_marshalled_top": "刷绿25系列车厢地板",
   "block.kuayue.carport_25bgzk": "25B/G/Z/K车厢车棚",
   "block.kuayue.carport_25bgzk_air_condition_all": "25系列车厢空调1",
+  "block.kuayue.carport_25bgzk_air_condition_side": "25系列车厢空调2",
   "block.kuayue.carport_25t": "25T车厢车棚",
   "block.kuayue.smooth_quartz_panel_half": "平滑石英竖半砖",
   "block.kuayue.smooth_quartz_panel_4": "平滑石英竖1/4砖",
@@ -126,10 +132,18 @@
   "block.kuayue.df11g_panel_kuayue.tooltip": "§7抹去的只是油漆,而历史也终究不会忘记......",
   "block.kuayue.hxd3d_front.tooltip": "§c不是红枣！",
   "block.kuayue.pantograph.tooltip": "§7右键以§m降弓用刑。§r§7温馨提示：电化⚡区段，严禁⚡攀爬",
+
+  "block.kuayue.end_face_25t_original.tooltip": "§7温馨提示：当心夹手",
+  "block.kuayue.end_face_25b_original.tooltip": "§7听说当年有人从这里掉下去过",
+  "block.kuayue.end_face_25g_original.tooltip": "§7嘎吱~嘎吱~",
+
+
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "开什么玩笑，要吐了",
   "block.kuayue.panel_cr200j_marshalled_top.tooltip": "开什么玩笑，要吐了",
   "block.kuayue.panel_cr200j_marshalled_bottom.tooltip": "开什么玩笑，要吐了",
   "block.kuayue.slab_cr200j_marshalled_top.tooltip": "开什么玩笑，要吐了",
+
+
   "tips.group": "--------------------------------以下是分组-------------------------------------------",
   "itemGroup.item_group_main": "跨越·结构体",
   "itemGroup.item_group_diet": "跨越·餐饮",

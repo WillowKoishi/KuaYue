@@ -19,6 +19,7 @@
   "block.kuayue.slab_25g_original_top": "original color 25G carriage floor",
   "block.kuayue.ladder_25g_original": "original color 25G carriage ladder",
  "block.kuayue.end_face_25g_original": "original color 25G carriage end face",
+"block.kuayue.end_face_door_25bg": "25B/G carriage isolation door",
 
   "block.kuayue.panel_25k_original_bottom": "original color 25K carriage bottom panel",
   "block.kuayue.panel_25k_original_bottom_line": "original color 25K carriage bottom line",
@@ -27,6 +28,8 @@
   "block.kuayue.panel_25k_original_window": "original color 25K carriage window",
   "block.kuayue.panel_25k_original_top": "original color 25K carriage top panel",
   "block.kuayue.slab_25k_original_top": "original color 25K carriage floor",
+  "block.kuayue.end_face_25k_original": "original color 25k carriage end face",
+
   "block.kuayue.panel_25t_original_bottom": "original color 25T carriage bottom panel",
   "block.kuayue.panel_25t_original_bottom_b": "original color 25T carriage bottom panel 2",
   "block.kuayue.panel_25t_original_mid": "original color 25T carriage middle panel",
@@ -39,6 +42,8 @@
   "block.kuayue.panel_25t_original_skirt": "original color 25T carriage bottom skirt",
   "block.kuayue.panel_25t_original_skirt_side": "original color 25T carriage side bottom skirt",
   "block.kuayue.slab_25t_original_top": "original color 25T carriage floor",
+  "block.kuayue.end_face_25t_original": "original color 25T carriage end face",
+
   "block.kuayue.original_25b_door": "original color 25B door",
   "block.kuayue.original_25g_door": "original color 25G door",
   "block.kuayue.original_25k_door": "original color 25K door",
@@ -59,6 +64,7 @@
   "block.kuayue.slab_25_marshalled_top": "marshalled 25Series Carriage floor",
   "block.kuayue.carport_25bgzk": "25B/G/Z/K Carriage Carport",
   "block.kuayue.carport_25bgzk_air_condition_all": "25B/G/Z/K air condition",
+ "block.kuayue.carport_25bgzk_air_condition_side": "25B/G/Z/K air condition2",
 
   "block.kuayue.carport_25t": "25T Carriage Carport",
   "block.kuayue.smooth_quartz_panel_half": "1/2 Smooth quartz block",
@@ -126,6 +132,11 @@
   "block.kuayue.df11g_panel_kuayue.tooltip": "§7What is erased is only paint, and history will never be forgotten....",
   "block.kuayue.hxd3d_front.tooltip": "§cNot A DATES!",
   "block.kuayue.pantograph.tooltip": "§7Right click to lower the pantograph",
+
+  "block.kuayue.end_face_25t_original.tooltip": "§7Tips: Be careful of pinching your hands",
+  "block.kuayue.end_face_25b_original.tooltip": "§7It's said that someone fell from here",
+  "block.kuayue.end_face_25g_original.tooltip": "§7Crunch~ Crunch~",
+
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_top.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_bottom.tooltip": "R U kidding me?I'm going to throw up",
