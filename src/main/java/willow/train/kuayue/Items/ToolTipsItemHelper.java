@@ -1,6 +1,7 @@
 package willow.train.kuayue.Items;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -23,8 +24,10 @@ public class ToolTipsItemHelper extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-        //pTooltip.add(new TranslatableComponent(pStack.getDescriptionId()+".tooltip"));
-        pTooltip.add(Component.translatable(pStack.getDescriptionId()+".tooltip"));
+        TranslatableComponent translatableComponent = new TranslatableComponent(pStack.getDescriptionId()+".tooltip");
+        TranslatableComponent translatableComponent2 = new TranslatableComponent(pStack.getDescriptionId()+".tooltip2");
+        if(!translatableComponent.getString().equals("")&&!translatableComponent.getString().equals(pStack.getDescriptionId()+".tooltip")) pTooltip.add(translatableComponent);
+        if(!translatableComponent2.getString().equals("")&&!translatableComponent2.getString().equals(pStack.getDescriptionId()+".tooltip2")) pTooltip.add(translatableComponent2);
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 }
