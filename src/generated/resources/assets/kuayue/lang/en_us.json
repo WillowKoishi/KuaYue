@@ -10,6 +10,8 @@
   "block.kuayue.slab_25b_original_top": "original color 25B carriage up panel",
   "block.kuayue.end_face_25b_original": "original color 25B carriage end face",
  "block.kuayue.ladder_25b_original":"original color 25B carriage ladder",
+  "block.kuayue.end_face_25b_original_upper": "original color 25B carriage end face upper",
+  "block.kuayue.end_face_25b_original_upper_2": "original color 25B carriage end face upper 2",
 
   "block.kuayue.panel_25b_original_top_b": "original color 25B carriage floor",
   "block.kuayue.panel_25g_original_bottom": "original color 25G carriage bottom panel",
@@ -20,6 +22,8 @@
   "block.kuayue.ladder_25g_original": "original color 25G carriage ladder",
  "block.kuayue.end_face_25g_original": "original color 25G carriage end face",
 "block.kuayue.end_face_door_25bg": "25B/G carriage isolation door",
+  "block.kuayue.end_face_25g_original_upper": "original color 25G carriage end face upper",
+  "block.kuayue.end_face_25g_original_upper_2": "original color 25G carriage end face upper 2",
 
   "block.kuayue.panel_25k_original_bottom": "original color 25K carriage bottom panel",
   "block.kuayue.panel_25k_original_bottom_line": "original color 25K carriage bottom line",
@@ -29,6 +33,8 @@
   "block.kuayue.panel_25k_original_top": "original color 25K carriage top panel",
   "block.kuayue.slab_25k_original_top": "original color 25K carriage floor",
   "block.kuayue.end_face_25k_original": "original color 25k carriage end face",
+  "block.kuayue.end_face_25k_original_upper": "original color 25K carriage end face upper",
+  "block.kuayue.end_face_25k_original_upper_2": "original color 25K carriage end face upper 2",
 
   "block.kuayue.panel_25t_original_bottom": "original color 25T carriage bottom panel",
   "block.kuayue.panel_25t_original_bottom_b": "original color 25T carriage bottom panel 2",
@@ -43,6 +49,8 @@
   "block.kuayue.panel_25t_original_skirt_side": "original color 25T carriage side bottom skirt",
   "block.kuayue.slab_25t_original_top": "original color 25T carriage floor",
   "block.kuayue.end_face_25t_original": "original color 25T carriage end face",
+  "block.kuayue.end_face_25t_original_upper": "original color 25T carriage end face upper",
+  "block.kuayue.end_face_25t_original_upper_2": "original color 25T carriage end face upper 2",
 
   "block.kuayue.original_25b_door": "original color 25B door",
   "block.kuayue.original_25g_door": "original color 25G door",
@@ -136,6 +144,7 @@
   "block.kuayue.end_face_25t_original.tooltip": "§7Tips: Be careful of pinching your hands",
   "block.kuayue.end_face_25b_original.tooltip": "§7It's said that someone fell from here",
   "block.kuayue.end_face_25g_original.tooltip": "§7Crunch~ Crunch~",
+  "block.kuayue.end_face_25b_original_upper_2.tooltip": "",
 
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "R U kidding me?I'm going to throw up",
   "block.kuayue.panel_cr200j_marshalled_top.tooltip": "R U kidding me?I'm going to throw up",

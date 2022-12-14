@@ -11,6 +11,8 @@
   "block.kuayue.slab_25b_original_top": "原色25B地板",
   "block.kuayue.panel_25b_original_top_b": "原色25B车厢上厢板b",
   "block.kuayue.end_face_25b_original": "原色25B车厢端面",
+  "block.kuayue.end_face_25b_original_upper": "原色25B车厢上端面",
+  "block.kuayue.end_face_25b_original_upper_2": "原色25B车厢上端面(空调端)",
   "block.kuayue.ladder_25b_original":"原色25B登车梯",
 
   "block.kuayue.panel_25g_original_bottom": "原色25G车厢下厢板",
@@ -21,6 +23,8 @@
   "block.kuayue.ladder_25g_original": "原色25G登车梯",
   "block.kuayue.end_face_25g_original": "原色25G车厢端面",
   "block.kuayue.end_face_door_25bg": "25B/G车厢隔离门",
+  "block.kuayue.end_face_25g_original_upper": "原色25G车厢上端面",
+  "block.kuayue.end_face_25g_original_upper_2": "原色25G车厢上端面(空调端)",
 
   "block.kuayue.panel_25k_original_bottom": "原色25K车厢下厢板",
   "block.kuayue.panel_25k_original_bottom_line": "原色25K车厢腰线",
@@ -30,6 +34,8 @@
   "block.kuayue.panel_25k_original_top": "原色25K车厢上厢板",
   "block.kuayue.slab_25k_original_top": "原色25K地板",
   "block.kuayue.end_face_25k_original": "原色25K车厢端面",
+  "block.kuayue.end_face_25k_original_upper": "原色25K车厢上端面",
+  "block.kuayue.end_face_25k_original_upper_2": "原色25K车厢上端面(空调端)",
 
   "block.kuayue.panel_25t_original_bottom": "原色25T车厢下厢板",
   "block.kuayue.panel_25t_original_bottom_b": "原色25T车厢下厢板b",
@@ -44,6 +50,8 @@
   "block.kuayue.panel_25t_original_skirt_side": "原色25T车厢侧裙板",
   "block.kuayue.slab_25t_original_top": "原色25T地板",
   "block.kuayue.end_face_25t_original": "原色25T车厢端面",
+  "block.kuayue.end_face_25t_original_upper": "原色25T车厢上端面",
+  "block.kuayue.end_face_25t_original_upper_2": "原色25T车厢上端面(空调端)",
 
   "block.kuayue.original_25b_door": "原色25B车厢门",
   "block.kuayue.original_25g_door": "原色25G车厢门",
@@ -131,11 +139,13 @@
   "block.kuayue.df11g_front2.tooltip": "§7才不是猪头!",
   "block.kuayue.df11g_panel_kuayue.tooltip": "§7抹去的只是油漆,而历史也终究不会忘记......",
   "block.kuayue.hxd3d_front.tooltip": "§c不是红枣！",
-  "block.kuayue.pantograph.tooltip": "§7右键以§m降弓用刑。§r§7温馨提示：电化⚡区段，严禁⚡攀爬",
+  "block.kuayue.pantograph.tooltip": "§7右键以§m降弓用刑。",
+  "block.kuayue.pantograph.tooltip2": "§7温馨提示：电化⚡区段，严禁⚡攀爬",
 
   "block.kuayue.end_face_25t_original.tooltip": "§7温馨提示：当心夹手",
   "block.kuayue.end_face_25b_original.tooltip": "§7听说当年有人从这里掉下去过",
   "block.kuayue.end_face_25g_original.tooltip": "§7嘎吱~嘎吱~",
+  "block.kuayue.end_face_25b_original_upper_2.tooltip": "§7让你见识见识柳厂B改G",
 
 
   "block.kuayue.widepanel_cr200j_marshalled_mid.tooltip": "开什么玩笑，要吐了",
