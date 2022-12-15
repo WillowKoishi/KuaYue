@@ -189,7 +189,13 @@ public class BlockInit {
             () -> new CarPortBlockBGKZ(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
-//carport_25bgzk_air_condition_side
+
+    public static final RegistryObject<Train25GLadderBlock> LADDER_25K_ORIGIINAL = register("ladder_25k_original_sliding",
+            () -> new Train25GLadderBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    //carport_25bgzk_air_condition_side
 
     public static final RegistryObject<DF11GMirrorCarportBlock> CARPORT_25BGZK_AIR_CONDITION_SIDE = register("carport_25bgzk_air_condition_side",
             () -> new DF11GMirrorCarportBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
