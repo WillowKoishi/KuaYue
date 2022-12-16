@@ -44,7 +44,7 @@ public class Train25GLadderBlock extends TrapDoorBlock {
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.valueOf(false)).setValue(HALF, Half.BOTTOM).setValue(POWERED, Boolean.valueOf(false)).setValue(WATERLOGGED, Boolean.valueOf(false)));
 
     }
-
+    protected static final VoxelShape OFF_AABB = Block.box(0, 0, 0, 16, 16, 16);
     protected static final VoxelShape SOUTH_AABB = Shapes.or(Block.box(0.5, 0, 0.5, 15, 1, 9),
             Block.box(0.5, 6, 5.5, 15, 7, 12.5),
             Block.box(0.5, 12, 10.5, 15, 13, 15.5),
@@ -134,17 +134,23 @@ public class Train25GLadderBlock extends TrapDoorBlock {
 //    }
 
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
-        switch ((Direction) p_54372_.getValue(FACING)) {
-            case NORTH:
-                return NORTH_AABB;
-            case SOUTH:
-                return SOUTH_AABB;
-            case WEST:
-                return WEST_AABB;
-            case EAST:
-            default:
-                return EAST_AABB;
-        }
+       if(p_54372_.getValue(OPEN)) {
+
+           switch ((Direction) p_54372_.getValue(FACING)) {
+               case NORTH:
+                   return NORTH_AABB;
+               case SOUTH:
+                   return SOUTH_AABB;
+               case WEST:
+                   return WEST_AABB;
+               case EAST:
+               default:
+                   return EAST_AABB;
+           }
+       }
+       else {
+           return OFF_AABB;
+       }
     }
 
     private Half getHinge(BlockPlaceContext pContext) {
