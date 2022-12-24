@@ -3,15 +3,21 @@
   "block.kuayue.cr_logo": "China Railway Logo",
   "block.kuayue.clay_slab": "clay slab",
   "block.kuayue.clay_stairs": "clay stairs",
+  "block.kuayue.original_color_window_25": "25 series carriage window",
+  "block.kuayue.original_color_window_25_sealed": "25 series carriage sealed window",
+
   "block.kuayue.panel_25b_original_bottom": "original color 25B carriage bottom panel",
   "block.kuayue.panel_25b_original_mid": "original color 25B carriage middle panel",
   "block.kuayue.panel_25b_original_window": "original color 25B carriage window",
+  "block.kuayue.original_color_window_25b": "original color 25B carriage window",
   "block.kuayue.panel_25b_original_top": "original color 25B carriage up panel",
   "block.kuayue.slab_25b_original_top": "original color 25B carriage up panel",
   "block.kuayue.end_face_25b_original": "original color 25B carriage end face",
  "block.kuayue.ladder_25b_original":"original color 25B carriage ladder",
   "block.kuayue.end_face_25b_original_upper": "original color 25B carriage end face upper",
   "block.kuayue.end_face_25b_original_upper_2": "original color 25B carriage end face upper 2",
+
+  "block.kuayue.direct_drainage_toilet_original_25b": "original color 25B carriage direct drainage toilet",
 
   "block.kuayue.panel_25b_original_top_b": "original color 25B carriage floor",
   "block.kuayue.panel_25g_original_bottom": "original color 25G carriage bottom panel",
@@ -24,6 +30,8 @@
 "block.kuayue.end_face_door_25bg": "25B/G carriage isolation door",
   "block.kuayue.end_face_25g_original_upper": "original color 25G carriage end face upper",
   "block.kuayue.end_face_25g_original_upper_2": "original color 25G carriage end face upper 2",
+
+  "block.kuayue.direct_drainage_toilet_original_25g": "original color 25G carriage direct drainage toilet",
 
   "block.kuayue.panel_25k_original_bottom": "original color 25K carriage bottom panel",
   "block.kuayue.panel_25k_original_bottom_line": "original color 25K carriage bottom line",
@@ -39,6 +47,8 @@
   "block.kuayue.end_face_25k_original_rubber": "original color 25k carriage end face2",
   "block.kuayue.end_face_25k_original_rubber_upper": "original color 25K carriage end face upper 3",
   "block.kuayue.end_face_25k_original_rubber_upper_2": "original color 25K carriage end face upper 4",
+
+  "block.kuayue.direct_drainage_toilet_original_25k": "original color 25K carriage direct drainage toilet",
 
   "block.kuayue.panel_25t_original_bottom": "original color 25T carriage bottom panel",
   "block.kuayue.panel_25t_original_bottom_b": "original color 25T carriage bottom panel 2",
@@ -59,6 +69,8 @@
   "block.kuayue.end_face_25t_original_rubber": "original color 25k carriage end face 2",
   "block.kuayue.end_face_25t_original_rubber_upper": "original color 25K carriage end face upper 3",
   "block.kuayue.end_face_25t_original_rubber_upper_2": "original color 25K carriage end face upper 4",
+
+  "block.kuayue.direct_drainage_toilet_original_25t": "original color 25T carriage direct drainage toilet",
 
   "block.kuayue.original_25b_door": "original color 25B door",
   "block.kuayue.original_25g_door": "original color 25G door",
@@ -141,6 +153,7 @@
   "block.kuayue.hxd3d_slab": "HXD3D floor",
   "block.kuayue.hxd3d_cab_door": "HXD3D cab door",
 
+  "block.kuayue.boiling_water_place": "Tea stove",
   "tips.item": "--------------------------------all items above here-------------------------------------------",
   "item.kuayue.train_diet_1": "Train Meal A",
   "item.kuayue.ca_25t": "Dining Car CA25T",

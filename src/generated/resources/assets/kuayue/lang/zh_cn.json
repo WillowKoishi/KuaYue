@@ -4,9 +4,13 @@
   "block.kuayue.cr_logo": "中国铁路路徽",
   "block.kuayue.clay_slab": "黏土台阶",
   "block.kuayue.clay_stairs": "黏土楼梯",
+
+  "block.kuayue.original_color_window_25": "25系列车厢窗户",
+  "block.kuayue.original_color_window_25_sealed": "25系列车厢密封窗户",
   "block.kuayue.panel_25b_original_bottom": "原色25B车厢下厢板",
   "block.kuayue.panel_25b_original_mid": "原色25B车厢中厢板",
   "block.kuayue.panel_25b_original_window": "原色25B车厢窗户",
+  "block.kuayue.original_color_window_25b": "原色25B车厢窗户",
   "block.kuayue.panel_25b_original_top": "原色25B车厢上厢板",
   "block.kuayue.slab_25b_original_top": "原色25B地板",
   "block.kuayue.panel_25b_original_top_b": "原色25B车厢上厢板b",
@@ -14,6 +18,8 @@
   "block.kuayue.end_face_25b_original_upper": "原色25B车厢上端面",
   "block.kuayue.end_face_25b_original_upper_2": "原色25B车厢上端面(空调端)",
   "block.kuayue.ladder_25b_original":"原色25B登车梯",
+
+  "block.kuayue.direct_drainage_toilet_original_25b": "原色25B直排式便池",
 
   "block.kuayue.panel_25g_original_bottom": "原色25G车厢下厢板",
   "block.kuayue.panel_25g_original_mid": "原色25G车厢中厢板",
@@ -26,6 +32,8 @@
   "block.kuayue.end_face_25g_original_upper": "原色25G车厢上端面",
   "block.kuayue.end_face_25g_original_upper_2": "原色25G车厢上端面(空调端)",
 
+  "block.kuayue.direct_drainage_toilet_original_25g": "原色25G直排式便池",
+
   "block.kuayue.panel_25k_original_bottom": "原色25K车厢下厢板",
   "block.kuayue.panel_25k_original_bottom_line": "原色25K车厢腰线",
   "block.kuayue.panel_25k_original_symbol": "原色25K车厢标识线",
@@ -36,10 +44,12 @@
   "block.kuayue.ladder_25k_original_sliding": "原色25K登车梯(塞拉门)",
   "block.kuayue.end_face_25k_original": "原色25K车厢端面(折棚风挡)",
   "block.kuayue.end_face_25k_original_upper": "原色25K车厢上端面(折棚风挡)",
-  "block.kuayue.end_face_25k_original_upper_2": "原色25K车厢上端面(空调端,橡胶风挡)",
+  "block.kuayue.end_face_25k_original_upper_2": "原色25K车厢上端面(空调端,折棚风挡)",
   "block.kuayue.end_face_25k_original_rubber": "原色25K车厢端面(橡胶风挡)",
   "block.kuayue.end_face_25k_original_rubber_upper": "原色25K车厢上端面(橡胶风挡)",
   "block.kuayue.end_face_25k_original_rubber_upper_2": "原色25K车厢端面(空调端,橡胶风挡)",
+
+  "block.kuayue.direct_drainage_toilet_original_25k": "原色25K直排式便池",
 
   "block.kuayue.panel_25t_original_bottom": "原色25T车厢下厢板",
   "block.kuayue.panel_25t_original_bottom_b": "原色25T车厢下厢板b",
@@ -56,10 +66,12 @@
   "block.kuayue.ladder_25t_original_sliding": "原色25T登车梯(塞拉门)",
   "block.kuayue.end_face_25t_original": "原色25T车厢端面(折棚风挡)",
   "block.kuayue.end_face_25t_original_upper": "原色25T车厢上端面(折棚风挡)",
-  "block.kuayue.end_face_25t_original_upper_2": "原色25T车厢上端面(空调端,橡胶风挡)",
+  "block.kuayue.end_face_25t_original_upper_2": "原色25T车厢上端面(空调端,折棚风挡)",
   "block.kuayue.end_face_25t_original_rubber": "原色25T车厢端面(橡胶风挡)",
   "block.kuayue.end_face_25t_original_rubber_upper": "原色25T车厢上端面(橡胶风挡)",
   "block.kuayue.end_face_25t_original_rubber_upper_2": "原色25T车厢端面(空调端,橡胶风挡)",
+
+  "block.kuayue.direct_drainage_toilet_original_25t": "原色25T直排式便池",
 
   "block.kuayue.original_25b_door": "原色25B车厢门",
   "block.kuayue.original_25g_door": "原色25G车厢门",
@@ -141,6 +153,8 @@
   "block.kuayue.hxd3d_slab": "HXD3D地板",
   "block.kuayue.hxd3d_cab_door": "HXD3D驾驶室门",
 
+  "block.kuayue.boiling_water_place": "茶炉",
+
   "tips.item": "--------------------------------以下是物品-------------------------------------------",
   "item.kuayue.train_diet_1": "火车餐A",
   "item.kuayue.ca_25t": "餐车25T",
@@ -152,6 +166,13 @@
   "block.kuayue.pantograph.tooltip": "§7右键以§m降弓用刑。",
   "block.kuayue.pantograph.tooltip2": "§7温馨提示：电化⚡区段，严禁⚡攀爬",
 
+  "block.kuayue.direct_drainage_toilet_original_25b.tooltip": "§7屁股着凉没？",
+  "block.kuayue.direct_drainage_toilet_original_25g.tooltip": "§7生态铁道之旅",
+  "block.kuayue.direct_drainage_toilet_original_25k.tooltip": "§7塔吊底下冰红茶，缆车路上八宝粥",
+  "block.kuayue.direct_drainage_toilet_original_25k.tooltip2": "§7课桌侧面葡萄干，铁路底下牛肉干",
+  "block.kuayue.direct_drainage_toilet_original_25t.tooltip": "§7假如刚好有车迷在拍车的话....",
+
+  "block.kuayue.original_color_window_25b.tooltip": "§m砍头窗",
   "block.kuayue.end_face_25t_original.tooltip": "§7温馨提示：当心夹手",
   "block.kuayue.end_face_25b_original.tooltip": "§7听说当年有人从这里掉下去过",
   "block.kuayue.end_face_25g_original.tooltip": "§7嘎吱~嘎吱~",

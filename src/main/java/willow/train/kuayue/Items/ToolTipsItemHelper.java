@@ -26,8 +26,10 @@ public class ToolTipsItemHelper extends BlockItem {
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
         TranslatableComponent translatableComponent = new TranslatableComponent(pStack.getDescriptionId()+".tooltip");
         TranslatableComponent translatableComponent2 = new TranslatableComponent(pStack.getDescriptionId()+".tooltip2");
+        TranslatableComponent translatableComponent3 = new TranslatableComponent(pStack.getDescriptionId()+".tooltip3");
         if(!translatableComponent.getString().equals("")&&!translatableComponent.getString().equals(pStack.getDescriptionId()+".tooltip")) pTooltip.add(translatableComponent);
         if(!translatableComponent2.getString().equals("")&&!translatableComponent2.getString().equals(pStack.getDescriptionId()+".tooltip2")) pTooltip.add(translatableComponent2);
+        if(!translatableComponent3.getString().equals("")&&!translatableComponent3.getString().equals(pStack.getDescriptionId()+".tooltip3")) pTooltip.add(translatableComponent3);
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
     }
 }
