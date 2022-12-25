@@ -17,7 +17,10 @@ import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DCabDoorBlock;
 import willow.train.kuayue.Blocks.Locos.HXD3D.HXD3DPanelBlocks;
 import willow.train.kuayue.Blocks.Locos.PantographBlock;
 import willow.train.kuayue.Blocks.Locos.df11g.*;
-import willow.train.kuayue.Blocks.Structure.*;
+import willow.train.kuayue.Blocks.Structure.AngleBlock22;
+import willow.train.kuayue.Blocks.Structure.PanelBlock2;
+import willow.train.kuayue.Blocks.Structure.PanelBlock4;
+import willow.train.kuayue.Blocks.Structure.PanelBlockHalf;
 import willow.train.kuayue.Blocks.TrainCarriage.*;
 import willow.train.kuayue.Items.ToolTipsItemHelper;
 import willow.train.kuayue.Main;
@@ -39,11 +42,11 @@ public class BlockInit {
 
     public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25 = register("original_color_window_25",
             () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
     public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25_SEALED = register("original_color_window_25_sealed",
             () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
     //25B
@@ -72,9 +75,25 @@ public class BlockInit {
                     .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25B_WIDE = register("original_color_window_25b_wide",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25B_SMALL = register("original_color_window_25b_small",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    public static final RegistryObject<TrainSealedWindowBlock> ORIGINAL_COLOR_WINDOW_25B_WIDE_SEALED = register("original_color_window_25b_wide_sealed",
+            () -> new TrainSealedWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+
     public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25B = register("original_color_window_25b",
             () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
     //panel_25b_original_top
@@ -139,6 +158,24 @@ public class BlockInit {
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    //original_color_window_25g_small
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25G_SMALL = register("original_color_window_25g_small",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+//original_color_window_25g_wide
+public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25G_WIDE = register("original_color_window_25g_wide",
+        () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+        object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+
+    public static final RegistryObject<TrainSealedWindowBlock> ORIGINAL_COLOR_WINDOW_25G_WIDE_SEALED = register("original_color_window_25g_wide_sealed",
+            () -> new TrainSealedWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
     //panel_25g_original_top
     public static final RegistryObject<TrainGlassPanelBlock> PANEL_25G_ORIGINAL_TOP = register("panel_25g_original_top",
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
@@ -203,6 +240,21 @@ public class BlockInit {
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25K_WIDE = register("original_color_window_25k_wide",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25K_SMALL = register("original_color_window_25k_small",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),0),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    public static final RegistryObject<TrainSealedWindowBlock> ORIGINAL_COLOR_WINDOW_25K_WIDE_SEALED = register("original_color_window_25k_wide_sealed",
+            () -> new TrainSealedWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+
     //panel_25k_original_top
     public static final RegistryObject<TrainGlassPanelBlock> PANEL_25K_ORIGINAL_TOP = register("panel_25k_original_top",
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
@@ -333,6 +385,20 @@ public class BlockInit {
             () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25T_WIDE = register("original_color_window_25t_wide",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25T_WIDE_BLUE = register("original_color_window_25t_wide_blue",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
+    public static final RegistryObject<TrainSealedWindowBlock> ORIGINAL_COLOR_WINDOW_25T_WIDE_SEALED = register("original_color_window_25t_wide_sealed",
+            () -> new TrainSealedWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+
     //panel_25t_original_top
     public static final RegistryObject<TrainPanelBlock> PANEL_25T_ORIGINAL_TOP = register("panel_25t_original_top",
             () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)

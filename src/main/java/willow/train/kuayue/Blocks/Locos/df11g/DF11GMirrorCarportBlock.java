@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import willow.train.kuayue.Blocks.Structure.PanelBlock25Side;
+import willow.train.kuayue.Blocks.TrainCarriage.PanelBlock25Side;
 
 public class DF11GMirrorCarportBlock extends PanelBlock25Side {
     protected int mWide = 1;

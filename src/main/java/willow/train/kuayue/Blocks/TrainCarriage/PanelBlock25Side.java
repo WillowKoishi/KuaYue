@@ -1,4 +1,4 @@
-package willow.train.kuayue.Blocks.Structure;
+package willow.train.kuayue.Blocks.TrainCarriage;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
