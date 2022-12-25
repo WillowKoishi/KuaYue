@@ -34,12 +34,12 @@ public class TrainOpenableWindowBlock extends TrapDoorBlock {
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    protected int type=0;
 
-
-    public TrainOpenableWindowBlock(Properties pProperties) {
+    public TrainOpenableWindowBlock(Properties pProperties,int itype) {
         super(pProperties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, Boolean.valueOf(false)).setValue(HALF, Half.BOTTOM).setValue(POWERED, Boolean.valueOf(false)).setValue(WATERLOGGED, Boolean.valueOf(false)));
-
+type= itype;
     }
 
     protected static final VoxelShape OFF_AABB = Block.box(0, 0, 0, 16, 16, 16);
@@ -48,6 +48,17 @@ public class TrainOpenableWindowBlock extends TrapDoorBlock {
     protected static final VoxelShape  WEST_AABB= Block.box(15, 0, 0, 17, 16, 16);
     protected static final VoxelShape SOUTH_AABB = Block.box(0, 0, -1, 16, 16, 1);
     protected static final VoxelShape EAST_AABB = Block.box(-1, 0, 0, 1, 16, 16);
+//"top"
+    protected static final VoxelShape NORTH_AABB2 = Block.box(0, 0, 15, 32, 16, 17);
+    protected static final VoxelShape  WEST_AABB2=Block.box(15, 0, -16, 17, 16, 16);
+    protected static final VoxelShape SOUTH_AABB2 = Block.box(-16, 0, -1, 16, 16, 1);
+    protected static final VoxelShape EAST_AABB2 = Block.box(-1, 0, 0, 1, 16, 32);
+    //"bottom"
+    protected static final VoxelShape NORTH_AABB2_LH = Block.box(-16, 0, 15, 16, 16, 17);
+    protected static final VoxelShape  WEST_AABB2_LH= Block.box(15, 0, 0, 17, 16, 32);
+    protected static final VoxelShape SOUTH_AABB2_LH = Block.box(0, 0, -1, 32, 16, 1);
+    protected static final VoxelShape EAST_AABB2_LH = Block.box(-1, 0, -16, 1, 16, 16);
+
 
 //    private boolean canAttachTo(BlockGetter pBlockReader, BlockPos pPos, Direction pDirection) {
 //        BlockState blockstate = pBlockReader.getBlockState(pPos);
@@ -61,18 +72,47 @@ public class TrainOpenableWindowBlock extends TrapDoorBlock {
 
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
 
-
+if(type == 0) {
+    switch ((Direction) p_54372_.getValue(FACING)) {
+        case NORTH:
+            return NORTH_AABB;
+        case SOUTH:
+            return SOUTH_AABB;
+        case WEST:
+            return WEST_AABB;
+        case EAST:
+        default:
+            return EAST_AABB;
+    }
+}
+else{
+    if(p_54372_.getValue(HALF) == Half.TOP){
         switch ((Direction) p_54372_.getValue(FACING)) {
             case NORTH:
-                return NORTH_AABB;
+                return NORTH_AABB2;
             case SOUTH:
-                return SOUTH_AABB;
+                return SOUTH_AABB2;
             case WEST:
-                return WEST_AABB;
+                return WEST_AABB2;
             case EAST:
             default:
-                return EAST_AABB;
+                return EAST_AABB2;
         }
+    }
+    else{
+        switch ((Direction) p_54372_.getValue(FACING)) {
+            case NORTH:
+                return NORTH_AABB2_LH;
+            case SOUTH:
+                return SOUTH_AABB2_LH;
+            case WEST:
+                return WEST_AABB2_LH;
+            case EAST:
+            default:
+                return EAST_AABB2_LH;
+        }
+    }
+}
 
 
     }
