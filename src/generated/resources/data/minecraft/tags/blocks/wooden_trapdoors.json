@@ -18,10 +18,22 @@
     "kuayue:original_color_window_25b_wide",
     "kuayue:original_color_window_25g_small",
     "kuayue:original_color_window_25k_small",
+    "kuayue:original_color_window_25t_small",
+    "kuayue:original_color_window_25t_small_blue",
+    "kuayue:original_color_window_bsp25t_small_blue",
     "kuayue:original_color_window_25b_wide",
     "kuayue:original_color_window_25g_wide",
     "kuayue:original_color_window_25k_wide",
     "kuayue:original_color_window_25t_wide",
-    "kuayue:original_color_window_25t_wide_blue"
+    "kuayue:original_color_window_25t_wide_blue",
+    "kuayue:original_color_window_bsp25t_wide_blue",
+    "kuayue:original_color_window_25b_toilet",
+    "kuayue:original_color_window_25g_toilet",
+    "kuayue:original_color_window_25k_toilet",
+    "kuayue:original_color_window_25t_toilet",
+    "kuayue:original_color_window_25t_toilet_blue",
+    "kuayue:original_color_window_25t_sealed_small",
+    "kuayue:original_color_window_25t_sealed_small_blue",
+    "kuayue:original_color_window_bsp25t_sealed_small_blue"
   ]
 }
