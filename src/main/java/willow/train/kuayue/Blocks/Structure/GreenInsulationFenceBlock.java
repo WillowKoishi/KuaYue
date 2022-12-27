@@ -194,63 +194,43 @@ protected VoxelShape WESTnEAST = Shapes.or(Block.box(0, 0, 0, 1, 32, 1),
     public VoxelShape getShape(BlockState p_54372_, BlockGetter p_54373_, BlockPos p_54374_, CollisionContext p_54375_) {
         if(type == 0) {
             if (p_54372_.getValue(HINGE) == DoorHingeSide.RIGHT) {
-                switch (p_54372_.getValue(FACING)) {
-                    case NORTH:
-                        return NORTH_AABB1;
-                    case SOUTH:
-                        return SOUTH_AABB1;
-                    case WEST:
-                        return WEST_AABB1;
-                    case EAST:
-                        return EAST_AABB1;
-                    default:
-                        return EAST_AABB1;
-                }
+                return switch (p_54372_.getValue(FACING)) {
+                    case NORTH -> NORTH_AABB1;
+                    case SOUTH -> SOUTH_AABB1;
+                    case WEST -> WEST_AABB1;
+                    case EAST -> EAST_AABB1;
+                    default -> EAST_AABB1;
+                };
             } else {
-                switch (p_54372_.getValue(FACING)) {
-                    case NORTH:
-                        return NORTH_AABB_lh;
-                    case SOUTH:
-                        return SOUTH_AABB_lh;
-                    case WEST:
-                        return WEST_AABB_lh;
-                    case EAST:
-                        return EAST_AABB_lh;
-                    default:
-                        return EAST_AABB_lh;
-                }
+                return switch (p_54372_.getValue(FACING)) {
+                    case NORTH -> NORTH_AABB_lh;
+                    case SOUTH -> SOUTH_AABB_lh;
+                    case WEST -> WEST_AABB_lh;
+                    case EAST -> EAST_AABB_lh;
+                    default -> EAST_AABB_lh;
+                };
             }
         }
         //return super.getShape(p_54372_, p_54373_, p_54374_, p_54375_);
     else {
             if (p_54372_.getValue(HINGE) == DoorHingeSide.RIGHT) {
-                switch (p_54372_.getValue(FACING)) {
-                    case EAST:
-                        return WESTnEAST;
-                    case WEST:
-                        return WESTnEAST;
-                    case NORTH:
-                        return NORTHnSOUTH;
-                    case SOUTH:
-                        return NORTHnSOUTH;
-                    default:
-                        return NORTHnSOUTH;
-                }
+                return switch (p_54372_.getValue(FACING)) {
+                    case EAST -> WESTnEAST;
+                    case WEST -> WESTnEAST;
+                    case NORTH -> NORTHnSOUTH;
+                    case SOUTH -> NORTHnSOUTH;
+                    default -> NORTHnSOUTH;
+                };
             }
     else
      {
-     switch (p_54372_.getValue(FACING)) {
-                        case EAST:
-                            return NORTHnSOUTH;
-                        case WEST:
-                            return NORTHnSOUTH;
-                        case NORTH:
-                            return WESTnEAST;
-                        case SOUTH:
-                            return WESTnEAST;
-                        default:
-                            return WESTnEAST;
-                    }
+         return switch (p_54372_.getValue(FACING)) {
+             case EAST -> NORTHnSOUTH;
+             case WEST -> NORTHnSOUTH;
+             case NORTH -> WESTnEAST;
+             case SOUTH -> WESTnEAST;
+             default -> WESTnEAST;
+         };
                 }
             }
     }
