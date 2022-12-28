@@ -6,7 +6,6 @@ import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
 import willow.train.kuayue.Blocks.Locos.df11g.DF11GBogeyBlock;
@@ -35,7 +34,7 @@ public class KYCreateBlock {
                     //.blockstate(BlockStateGen.horizontalBlockProvider(true))
                     .transform(BlockStressDefaults.setImpact(2.0))
                     //.onRegister(CreateRegistrate.connectedTextures(CrafterCTBehaviour::new))
-                    .addLayer(() -> RenderType::cutoutMipped)
+                    //.addLayer(() -> RenderType::cutoutMipped)
                     .item(ToolTipsItemHelper::new)
                     .transform(customItemModel())
 
@@ -51,7 +50,7 @@ public class KYCreateBlock {
                     //.blockstate(BlockStateGen.horizontalBlockProvider(true))
                     .transform(BlockStressDefaults.setImpact(2.0))
                     //.onRegister(CreateRegistrate.connectedTextures(CrafterCTBehaviour::new))
-                    .addLayer(() -> RenderType::cutoutMipped)
+                    //.addLayer(() -> RenderType::cutoutMipped)
                     .item(ToolTipsItemHelper::new)
                     .transform(customItemModel())
                     .register();

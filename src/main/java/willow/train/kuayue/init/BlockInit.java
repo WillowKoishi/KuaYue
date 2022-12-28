@@ -182,10 +182,10 @@ public class BlockInit {
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
     //original_color_window_25g_wide
-public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25G_WIDE = register("original_color_window_25g_wide",
-        () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
-        object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WINDOW_25G_WIDE = register("original_color_window_25g_wide",
+            () -> new TrainOpenableWindowBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion(),1),
+            object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
 
     public static final RegistryObject<TrainSealedWindowBlock> ORIGINAL_COLOR_WINDOW_25G_WIDE_SEALED = register("original_color_window_25g_wide_sealed",
@@ -313,11 +313,11 @@ public static final RegistryObject<TrainOpenableWindowBlock> ORIGINAL_COLOR_WIND
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(), 2),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
-//carport_25bgzkt_water_tank
-public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK = register("carport_25bgzkt_water_tank",
-        () -> new HXD3DPanelBlocks(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(), 2),
-        object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
+    //carport_25bgzkt_water_tank
+    public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK = register("carport_25bgzkt_water_tank",
+            () -> new HXD3DPanelBlocks(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(), 2),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
     public static final RegistryObject<CarPortBlockBGKZ> CARPORT_25BGZK_AIR_CONDITION_ALL = register("carport_25bgzk_air_condition_all",
             () -> new CarPortBlockBGKZ(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
@@ -664,76 +664,6 @@ public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK 
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
 
-    //刷绿shualv
-    public static final RegistryObject<TrainDoorBlock> PANEL_25_MARSHALLED_DOOR = register("marshalled_25_door",
-            () -> new TrainDoorBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.WATER).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainPanelBlock> PANEL_25_MARSHALLED_BOTTOM = register("panel_25_marshalled_bottom",
-            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.PLANT).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainPanelBlock> PANEL_25_MARSHALLED_BOTTOM_LINE = register("panel_25_marshalled_bottom_line",
-            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.PLANT).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainPanelBlock> PANEL_25_MARSHALLED_MID = register("panel_25_marshalled_mid",
-            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.PLANT).strength(3.0f)
-                    .sound(SoundType.NETHER_BRICKS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainPanelBlock> PANEL_25_MARSHALLED_TOP = register("panel_25_marshalled_top",
-            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.PLANT).strength(3.0f)
-                    .sound(SoundType.NETHER_BRICKS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainPanelBlock> PANEL_25_MARSHALLED_TOP_B = register("panel_25_marshalled_top_b",
-            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.PLANT).strength(3.0f)
-                    .sound(SoundType.NETHER_BRICKS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<PanelBlock25Side> PANEL_25B_MARSHALLED_SYMBOL = register("panel_25b_marshalled_symbol",
-            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-    public static final RegistryObject<PanelBlock25Side> PANEL_25G_MARSHALLED_SYMBOL = register("panel_25g_marshalled_symbol",
-            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-    public static final RegistryObject<PanelBlock25Side> PANEL_25K_MARSHALLED_SYMBOL = register("panel_25k_marshalled_symbol",
-            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainGlassPanelBlock> PANEL_25B_MARSHALLED_WINDOW = register("panel_25b_marshalled_window",
-            () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TopPanelSlabBlock> SLAB_25_MARSHALLED_TOP = register("slab_25_marshalled_top",
-            () -> new TopPanelSlabBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainGlassPanelBlock> PANEL_25_MARSHALLED_WINDOW = register("panel_25_marshalled_window",
-            () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.GLASS).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<TrainGlassPanelBlock> PANEL_25T_MARSHALLED_SKIRT = register("panel_25t_marshalled_skirt",
-            () -> new TrainGlassPanelBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-    public static final RegistryObject<PanelBlock25Side> PANEL_25T_MARSHALLED_SKIRT_SIDE = register("panel_25t_marshalled_skirt_side",
-            () -> new PanelBlock25Side(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
-
-
     //受电弓
     public static final RegistryObject<PantographBlock> PANTOGRAPH = register("pantograph",
             () -> new PantographBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
@@ -874,14 +804,14 @@ public static final RegistryObject<HXD3DPanelBlocks> CARPORT_25BGZKT_WATER_TANK 
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new ToolTipsItemHelper(object.get(), new Item.Properties().tab(Main.KUAYUE_NormalSpeedPassageCarriageTab)));
 
-//    public static final RegistryObject<TrainPanelBlock> DF11G_FRONT = register("df11g_front",
+    //    public static final RegistryObject<TrainPanelBlock> DF11G_FRONT = register("df11g_front",
 //            () -> new TrainPanelBlock(BlockBehaviour.Properties.of(Material.METAL,MaterialColor.NONE).strength(3.0f)
 //                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),object -> () -> new BlockItem(object.get(),
 //                    new Item.Properties().tab(Main.KUAYUE_LOCOS)));
-public static final RegistryObject<DF11GCowcatcherBlock> DF11G_COWCATCHER = register("df11g_cowcatcher",
-        () -> new DF11GCowcatcherBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
-        object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+    public static final RegistryObject<DF11GCowcatcherBlock> DF11G_COWCATCHER = register("df11g_cowcatcher",
+            () -> new DF11GCowcatcherBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
     public static final RegistryObject<DF11GMirrorCarportBlock> DF11G_CARPORT_1 = register("df11g_carport_1",
             () -> new DF11GMirrorCarportBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
@@ -943,11 +873,11 @@ public static final RegistryObject<DF11GCowcatcherBlock> DF11G_COWCATCHER = regi
             () -> new PanelBlock2(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
                     .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
-//df11g_panel_cr
-public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("df11g_panel_cr",
-        () -> new DF11GPanel3Wide(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
-                .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(),3),
-        object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
+    //df11g_panel_cr
+    public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("df11g_panel_cr",
+            () -> new DF11GPanel3Wide(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
+                    .sound(SoundType.COPPER).requiresCorrectToolForDrops().noOcclusion(),3),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_LOCOS)));
 
     public static final RegistryObject<DF11GMirrorCarportBlock> DF11G_PANEL_MID_FRONT_2= register("df11g_panel_mid_front_2",
             () -> new DF11GMirrorCarportBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).strength(3.0f)
@@ -1004,11 +934,6 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
                     .sound(SoundType.STONE).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Main.KUAYUE_MAIN)));
 
-    public static final RegistryObject<MegaPhoneBlock> MEGAPHONE = register("megaphone",
-            () -> new MegaPhoneBlock(BlockBehaviour.Properties.of(Material.STONE,MaterialColor.NONE).strength(3.0f)
-                    .sound(SoundType.STONE).requiresCorrectToolForDrops().noOcclusion()),object -> () -> new BlockItem(object.get(),
-                    new Item.Properties()));//.tab(Main.KUAYUE_GROUND)));
-
     private static <T extends Block> RegistryObject<T> registerBlock(final String name,
                                                                      final Supplier<? extends T> block) {
         //LOGGER.info("rigister block:"+name);
@@ -1025,7 +950,7 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
         return obj;
     }
     private static <T extends Block> RegistryObject<T> register2(final String name, final Supplier<? extends T> block,
-                                                                Function<RegistryObject<T>, Supplier<? extends Item>> item) {
+                                                                 Function<RegistryObject<T>, Supplier<? extends Item>> item) {
         RegistryObject<T> obj = registerBlock(name, block);
         //ITEMS.register(name, item.apply(obj));
         LOGGER.info("rigister block:"+name);
@@ -1036,4 +961,3 @@ public static final RegistryObject<DF11GPanel3Wide> DF11G_PANEL_CR = register("d
     }
 
 }
-
