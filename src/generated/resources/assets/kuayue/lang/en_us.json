@@ -141,10 +141,10 @@
   "block.kuayue.smooth_quartz_panel_4": "1/2 Smooth quartz block",
   "block.kuayue.smooth_quartz_panel_2": "1/8 Smooth quartz block",
   "block.kuayue.smooth_quartz_angle_22_up": "1/2 Smooth quartz block slop",
-  "block.kuayue.pantograph": "pantograph",
+  "block.kuayue.pantograph": "Pantograph",
   "block.kuayue.catenary_pole": "Steel catenary shelf",
-  "block.kuayue.catenary_grid": "catenary shelf",
-  "block.kuayue.hang_catenary_grid": "catenary shelf(hanged)",
+  "block.kuayue.catenary_grid": "Catenary shelf",
+  "block.kuayue.hang_catenary_grid": "Catenary shelf(hanged)",
   "block.kuayue.station_entrance_signal": "Inbound signal",
   "block.kuayue.shunting_signal": "Shunting signal",
   "block.kuayue.no_double_pantograph": "No_double_pantograph",
@@ -160,7 +160,7 @@
   "block.kuayue.switch_on_sign": "Sign(switch on)",
   "block.kuayue.signal_pole": "Signal column",
   "block.kuayue.signal_pole_light": "Signal(in column)",
-  "block.kuayue.concrete_pole": "concrete column",
+  "block.kuayue.concrete_pole": "Concrete column",
   "block.kuayue.tactile_paving_straight": "typhlosole(line)",
   "block.kuayue.tactile_paving_pin": "Typhlosole(point)",
   "block.kuayue.flourescent_light": "Fluorescent lamp",
@@ -232,7 +232,7 @@
 
   "tips.sound": "--------------------------------all sounds above here-------------------------------------------",
 
-  "Sounds.kuayue.crossing_ringing": "Cation: TRAINS!",
+  "sounds.kuayue.crossing_ringing": "Cation: TRAINS!",
 
   "tips.effect": "--------------------------------all effect above here-------------------------------------------",
 
